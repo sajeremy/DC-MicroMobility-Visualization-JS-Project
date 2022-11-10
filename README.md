@@ -26,13 +26,12 @@ In addition, this project will include:
 - Hub-Spot information will be displayed on right side of map if user selects particular area of NYC
 
 ### Technologies, Libraries, APIs:
-The project will be implemented with the following technologies:
 - **Micromobility service & count API** to provide data of bicycles and e-scooters in NYC
 - **D3js Library** to style map and create interactive zoom features
 - **Webpack** to bundle source JavaScript code
 - **npm** to manage project dependecies
 
-###Implementation Timeline
+### Implementation Timeline
 **11/10/2022**
 - [x] Review basics of fetching and practice with API's
 - [ ] Down select bike & e-scooter data sources & data types
