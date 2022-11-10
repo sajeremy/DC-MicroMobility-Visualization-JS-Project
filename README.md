@@ -4,7 +4,8 @@ The primary purpose of the visualization will be to provide users with informati
 
 
 1. NYC Counter Data/API:
-2. Map Visualization API: (Potentially both options below)
+   - Option 1
+3. Map Visualization API: (Potentially both options below)
 
 
 The primary technologies being investigated for development include:
