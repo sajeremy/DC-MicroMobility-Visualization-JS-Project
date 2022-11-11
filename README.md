@@ -1,13 +1,13 @@
-# NYC Shared Micromobility Visualization JavaScript-Project
+# DC Shared Micromobility Visualization JavaScript-Project
 
 ### Abstract:
-The primary purpose of the visualization will be to provide users with information on the number of bicycles/e-scooters used in different areas of NYC. A heatmap can be generated based on the frequency of bikes in nyc neighborhoods and overlayed with an interactive map of NYC. The goal would be to allow a user to to see a high level heatmap of bikes in NYC as well as zoom into particular areas of interest and see changes in patterns over time.  
+The primary purpose of the visualization will be to provide users with information on the number of bicycles/e-scooters used in different areas of DC. A heatmap can be generated based on the frequency of bikes in nyc neighborhoods and overlayed with an interactive map of DC. The goal would be to allow a user to to see a high level heatmap of bikes in NYC as well as zoom into particular areas of interest and see changes in patterns over time.  
 
 ### Functionality & MVPS
 With this tool users will be able to:
 - Fetch data from Micromobility Service API (e.g. Citi Bike, NYC Bicycle Counts, etc.)
-- View  and scroll map of nyc with count of bicycle/e-scooter usage indicated through the presence of markers or heat map
-- View additional information (e.g. ) of hub-spots for bicycles/e-scooters by clicking on selected ares of nyc map
+- View  and scroll map of DC with count of bicycle/e-scooter usage indicated through the presence of markers or heat map
+- View additional information (e.g. ) of hub-spots for bicycles/e-scooters by clicking on selected ares of DC map
 - Provide toggle to visualization of past data
 
 In addition, this project will include:
