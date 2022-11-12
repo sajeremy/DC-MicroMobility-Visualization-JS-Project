@@ -1,12 +1,29 @@
 h1  {
-   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+   font-family:fantasy; 
    color: green;
+   margin-left: 15px;
+   display:inline-block;
+   align-items: center;
+}
+
+#leafletMap  {
+   height: 600px;
+   width: 900px;
    margin-left: 15px;
 }
 
-// #leafletMap  {
-//    height: 600px;
-//    width: 900px;
-//    margin-left: 15px;
+body {
+   background: rgb(34,193,195);
+   background: linear-gradient(0deg, rgba(34,193,195,1) 14%, rgba(253,187,45,1) 100%);
+}
+
+// :root {
+//    --map-tiles-filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
+// }
+
+// @media (prefers-color-scheme: dark) {
+//    .darkMode {
+//        filter:var(--map-tiles-filter, none);
+//   }
 // }
 
