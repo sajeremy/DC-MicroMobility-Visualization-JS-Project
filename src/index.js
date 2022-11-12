@@ -1,8 +1,9 @@
-import {getCapitalBike, getHelbizScooter} from './scripts/bikeAPI'
+import {getCapitalBike, getHelbizScooter, getBirdScooter} from './scripts/bikeAPI'
 // import {map, addTiles} from './scripts/map'
 
 getCapitalBike();
 getHelbizScooter();
+getBirdScooter();
 // map;
 // addTiles;
 

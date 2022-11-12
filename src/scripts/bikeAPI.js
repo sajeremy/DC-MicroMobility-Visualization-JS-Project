@@ -48,3 +48,27 @@ export async function getHelbizScooter() {
    
 }
 
+const birdScooterURL = "https://cryptic-beyond-07137.herokuapp.com/https://gbfs.bird.co/dc" 
+let birdData;
+
+export async function getBirdScooter() {
+    const response = await fetch(birdScooterURL);
+    birdData = await response.json();
+
+    console.log("This is Bird Scooter Data");
+    console.log(birdData);
+
+    let node;
+    let textnode;
+
+    // for (let i=0; i < 10; i++) {
+    //     node = document.createElement("li");
+    //     textnode = document.createTextNode(
+    //     `This is an ${capitalData.data.bikes[i].type} 
+    //     with latitude: ${capitalData.data.bikes[i].lat} 
+    //     and longitude: ${capitalData.data.bikes[i].lon}`);
+    //     node.appendChild(textnode);
+    //     document.getElementById("capitalBike").appendChild(node);
+    // }
+       
+}
