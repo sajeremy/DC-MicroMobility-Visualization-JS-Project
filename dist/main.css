@@ -4,20 +4,50 @@
 h1 {
   font-family: fantasy;
   color: green;
-  margin-left: 15px;
-  display: inline-block;
+  display: flex;
   align-items: center;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
 }
 
 #leafletMap {
   height: 600px;
-  width: 900px;
-  margin-left: 15px;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 2px;
+  border-color: black;
+  border-style: solid;
 }
 
 body {
-  background: rgb(34, 193, 195);
-  background: linear-gradient(0deg, rgb(34, 193, 195) 14%, rgb(253, 187, 45) 100%);
+  background-color: whitesmoke;
+}
+
+:root {
+  --map-tiles-filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
 }
 
 /* Box sizing rules */
