@@ -5,7 +5,7 @@ import {getMapDC, drawMap} from './scripts/map'
 getCapitalBike();
 getHelbizScooter();
 getBirdScooter();
-getMapDC();
+// drawMap();
 
 
 // import Example from "./scripts/example";
