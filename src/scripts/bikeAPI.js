@@ -7,7 +7,7 @@ let helbizData;
 export async function getCapitalBike() {
     const response = await fetch(capitalBikeURL);
     capitalData = await response.json();
-
+    
     console.log("This is Capital Bike Data");
     console.log(capitalData);
 
