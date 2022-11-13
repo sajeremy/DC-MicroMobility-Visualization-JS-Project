@@ -69,13 +69,13 @@ const svg = d3.select('svg'),
     height = +svg.attr("height");
 
 const bosProjection = d3.geoAlbers()
-    .scale(100)
-    .rotate( [71.057,0] )
-    .center( [-2, 41] )
+    .scale(60000)
+    .rotate( [71.067,0] )
+    .center( [-3, 40.65] )
     .translate([width/2, height/2])
 
 // Load external data and boot
-    d3.json("Neighborhood_Clusters.geojson").then( function(data) {
+    d3.json(nySenate).then( function(data) {
     
     console.log("geojson data");
     console.log(data);
