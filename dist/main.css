@@ -13,7 +13,10 @@ h1.webTitle {
   background-color: #333;
 }
 
-.topnav a:first-child {
+.topnav a:first-child,
+.topnav a:nth-child(2),
+.topnav a:nth-child(3),
+.topnav a:nth-child(4) {
   float: left;
   font-size: 20px;
 }

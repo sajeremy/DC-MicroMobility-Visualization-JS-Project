@@ -19,11 +19,22 @@ let helbizScooterIcon = L.icon({
 });
 
 let addCapitalMarker = function(lat,lon) {
-    L.marker([lat,lon], {icon: capitalBikeIcon}).addTo(map)
+    let capitalMarker = L.marker([lat,lon], {icon: capitalBikeIcon})
+    capitalMarker.bindPopup('<b>Capital Bikeshare</b> <br>' + 
+    '<a href="https://capitalbikeshare.com/"' +
+    'target="_blank">Reserve Me</a>')
+     .openPopup();
+    capitalMarker.addTo(map)
+
 };
 
 let addHelbizMarker = function(lat,lon) {
-    L.marker([lat,lon], {icon: helbizScooterIcon}).addTo(map)
+    let helbizMarker = L.marker([lat,lon], {icon: helbizScooterIcon})
+    helbizMarker.bindPopup('<b>Helbiz</b> <br>' + 
+                '<a href="https://helbiz.com/"' +
+                'target="_blank">Reserve Me</a>')
+                 .openPopup();
+    helbizMarker.addTo(map)
 };
 
 

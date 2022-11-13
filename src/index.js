@@ -8,9 +8,25 @@ import '@fortawesome/fontawesome-free/js/brands'
 import {getCapitalBike, getHelbizScooter, getBirdScooter} from './scripts/bikeAPI'
 import {map, addTiles} from './scripts/map'
 
-getCapitalBike();
-getHelbizScooter();
-getBirdScooter();
+
+//    getCapitalBike() ;
+//    getHelbizScooter();
+//    getBirdScooter();
+
+const helbizButton = document.getElementById("helbizFilter")
+const markerDivElements = document.getElementsByClassName("leaflet-pane leaflet-marker-pane")
+helbizButton.addEventListener("click",function() {
+    debugger
+    markerDivElements.remove();
+    getHelbizScooter();
+});
+
+const capitalButton = document.getElementById("capitalFilter")
+capitalButton.addEventListener("click",function() {
+    getCapitalBike();
+});
+
+//class="leaflet-pane leaflet-marker-pane"
 map;
 addTiles;
 

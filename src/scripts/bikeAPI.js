@@ -31,14 +31,6 @@ export async function getCapitalBike() {
     let availableBikes = 0;
 
     for (let i=0; i < numBikes; i++) {
-        //Create list elements for first 10 bikes
-        // node = document.createElement("li");
-        // textnode = document.createTextNode(
-        // `This is an ${capitalData.data.bikes[i].type} 
-        // with latitude: ${capitalData.data.bikes[i].lat} 
-        // and longitude: ${capitalData.data.bikes[i].lon}`);
-        // node.appendChild(textnode);
-        // document.getElementById("capitalBike").appendChild(node);
 
         //Create markers for bikes not disabled or reserved 
         if (bikeNotDisabeled(i) || bikeNotReserved(i)) {
@@ -70,14 +62,7 @@ export async function getHelbizScooter() {
     let numScooters = helbizData.data.bikes.length;
 
     for (let i=0; i < numScooters; i++) {
-        // node = document.createElement("li");
-        // textnode = document.createTextNode(
-        // `This is a ${helbizData.data.bikes[i].vehicle_type} 
-        // with latitude: ${helbizData.data.bikes[i].lat} 
-        // and longitude: ${helbizData.data.bikes[i].lon}`);
-        // node.appendChild(textnode);
-        // document.getElementById("helbizScooter").appendChild(node);
-
+    
         //Create markers for scooters
         lat = helbizData.data.bikes[i].lat
         lon = helbizData.data.bikes[i].lon
