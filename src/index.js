@@ -16,8 +16,6 @@ import {map, addTiles} from './scripts/map'
 const helbizButton = document.getElementById("helbizFilter")
 const markerDivElements = document.getElementsByClassName("leaflet-pane leaflet-marker-pane")
 helbizButton.addEventListener("click",function() {
-    debugger
-    markerDivElements.remove();
     getHelbizScooter();
 });
 
@@ -26,7 +24,12 @@ capitalButton.addEventListener("click",function() {
     getCapitalBike();
 });
 
-//class="leaflet-pane leaflet-marker-pane"
+const allButton = document.getElementById("allFilter")
+allButton.addEventListener("click",function() {
+    getCapitalBike();
+    getHelbizScooter();
+});
+
 map;
 addTiles;
 

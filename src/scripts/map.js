@@ -25,7 +25,8 @@ let addCapitalMarker = function(lat,lon) {
     'target="_blank">Reserve Me</a>')
      .openPopup();
     capitalMarker.addTo(map)
-
+    
+    return capitalMarker;
 };
 
 let addHelbizMarker = function(lat,lon) {

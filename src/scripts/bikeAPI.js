@@ -1,4 +1,4 @@
-import {addCapitalMarker, addHelbizMarker} from './map'
+import {addCapitalMarker, addHelbizMarker,map} from './map'
 
 
 const capitalBikeURL = "https://gbfs.capitalbikeshare.com/gbfs/en/free_bike_status.json" 
@@ -29,6 +29,7 @@ export async function getCapitalBike() {
     };
 
     let availableBikes = 0;
+    let capitalMarkerArr = [];
 
     for (let i=0; i < numBikes; i++) {
 
@@ -36,10 +37,13 @@ export async function getCapitalBike() {
         if (bikeNotDisabeled(i) || bikeNotReserved(i)) {
             lat = capitalData.data.bikes[i].lat
             lon = capitalData.data.bikes[i].lon
-            addCapitalMarker(lat, lon);
+
+            let marker = addCapitalMarker(lat, lon);
+            capitalMarkerArr.push(marker);
             availableBikes += 1;
         };
 
+        let capitalGroup = L.layerGroup(capitalMarkerArr).addTo(map);
     }
 
     let numCapitalBikes = 
