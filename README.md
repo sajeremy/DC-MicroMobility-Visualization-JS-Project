@@ -16,7 +16,7 @@ In addition, this project will include:
 
 
 ### Wireframe
-![Wireframe Image](./Wireframe.png)
+![Wireframe Image](./imgs/Wireframe.png)
 - Main controls will be placed under upper left side of window
   - Live will display live data of bike & e-scooter count and availability
   - Date will display historical data available

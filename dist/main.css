@@ -1,39 +1,6 @@
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
-h1.webTitle {
-  color: #04AA6D;
-  background-color: whitesmoke;
-  text-align: center;
-  font-size: 40px;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a:first-child,
-.topnav a:nth-child(2),
-.topnav a:nth-child(3) {
-  float: left;
-  font-size: 20px;
-}
-
-.topnav a {
-  float: right;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #04AA6D;
-  color: #333;
-}
-
 #leafletMap {
   height: 600px;
   width: 90%;
@@ -126,4 +93,37 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+h1.webTitle {
+  color: #04AA6D;
+  background-color: whitesmoke;
+  text-align: center;
+  font-size: 40px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a:first-child,
+.topnav a:nth-child(2),
+.topnav a:nth-child(3),
+.topnav a:nth-child(4) {
+  float: left;
+  font-size: 20px;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #04AA6D;
+  color: #333;
 }

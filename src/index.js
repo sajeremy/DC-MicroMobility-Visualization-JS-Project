@@ -1,3 +1,4 @@
+
 //Font Awesome Icons
 import '@fortawesome/fontawesome-free/js/fontawesome'
 import '@fortawesome/fontawesome-free/js/solid'
@@ -5,13 +6,11 @@ import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
 
 //Bike, Scooter APIs with map
-import {getCapitalBike, getHelbizScooter, getBirdScooter} from './scripts/bikeAPI'
 import {map, addTiles} from './scripts/map'
+import {getCapitalBike} from './scripts/capitalBike'
+import {getHelbizScooter} from './scripts/helbizScooter'
+import {getBirdScooter} from './scripts/birdScooter'
 
-
-//    getCapitalBike() ;
-//    getHelbizScooter();
-//    getBirdScooter();
 
 const helbizButton = document.getElementById("helbizFilter")
 const markerDivElements = document.getElementsByClassName("leaflet-pane leaflet-marker-pane")
@@ -24,10 +23,16 @@ capitalButton.addEventListener("click",function() {
     getCapitalBike();
 });
 
+const birdButton = document.getElementById("birdFilter")
+birdButton.addEventListener("click",function() {
+    getBirdScooter();
+});
+
 const allButton = document.getElementById("allFilter")
 allButton.addEventListener("click",function() {
     getCapitalBike();
     getHelbizScooter();
+    getBirdScooter();
 });
 
 map;
