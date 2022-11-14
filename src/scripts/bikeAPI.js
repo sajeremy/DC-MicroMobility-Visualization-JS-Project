@@ -14,8 +14,6 @@ export async function getCapitalBike() {
     console.log("This is Capital Bike Data");
     console.log(capitalData);
 
-    let node;
-    let textnode;
     let lat;
     let lon;
     let numBikes = capitalData.data.bikes.length;
@@ -25,7 +23,7 @@ export async function getCapitalBike() {
     };
 
     function bikeNotReserved(idx) {
-        return capitalData.data.bikes[dx].is_reserved === 0;
+        return capitalData.data.bikes[idx].is_reserved === 0;
     };
 
     let availableBikes = 0;
@@ -43,7 +41,7 @@ export async function getCapitalBike() {
             availableBikes += 1;
         };
 
-        let capitalGroup = L.layerGroup(capitalMarkerArr).addTo(map);
+        L.layerGroup(capitalMarkerArr).addTo(map);
     }
 
     let numCapitalBikes = 
@@ -59,19 +57,21 @@ export async function getHelbizScooter() {
     console.log("This is Helbiz Scooter Data");
     console.log(helbizData);
 
-    let node;
-    let textnode;
     let lat;
     let lon;
     let numScooters = helbizData.data.bikes.length;
+    // let helbizMarkers = L.markerClusterGroup();
 
     for (let i=0; i < numScooters; i++) {
     
         //Create markers for scooters
         lat = helbizData.data.bikes[i].lat
         lon = helbizData.data.bikes[i].lon
-        addHelbizMarker(lat, lon);
+        let marker = addHelbizMarker(lat, lon);
+        // helbizMarkers.addLayer(marker);
     }
+
+    map.addLayer(markers);
 
     let numHelbizScooters = 
         `Currently ${numScooters} Helbiz Scooters are available`; 
