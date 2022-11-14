@@ -11,32 +11,60 @@ import {getCapitalBike} from './scripts/capitalBike'
 import {getHelbizScooter} from './scripts/helbizScooter'
 import {getBirdScooter} from './scripts/birdScooter'
 
+const markerDivElements = document.getElementsByClassName("leaflet-pane leaflet-marker-pane")
+let buttonArr = [];
 
 const helbizButton = document.getElementById("helbizFilter")
-const markerDivElements = document.getElementsByClassName("leaflet-pane leaflet-marker-pane")
 helbizButton.addEventListener("click",function() {
-    getHelbizScooter();
+    // if (markerDivElements) {markerDivElements[0].remove()};
+    // const newMarkerDiv = document.createElement("div");
+    // newMarkerDiv.setAttribute("class","leaflet-pane leaflet-marker-pane")
+    // markerDivElementParent[0].appendChild(newMarkerDiv);
+
+    if (!buttonArr.includes("helbiz")) {
+        buttonArr.push("helbiz");
+        getHelbizScooter();
+    } else {
+        while (markerDivElements[0].firstChild) {
+            markerDivElements[0].removeChild(markerDivElements[0].lastChild)
+        }
+        let idx = buttonArr.findIndex(el => el === "helbizer");
+        buttonArr.splice(idx,1);
+
+    }
+    
+    
 });
 
 const capitalButton = document.getElementById("capitalFilter")
 capitalButton.addEventListener("click",function() {
+    // debugger
+    // markerDivElements[0].remove();
+    while (markerDivElements[0].firstChild) {
+        markerDivElements[0].removeChild(markerDivElements[0].lastChild)
+    }
     getCapitalBike();
 });
 
 const birdButton = document.getElementById("birdFilter")
 birdButton.addEventListener("click",function() {
-    getBirdScooter();
+    // markerDivElements[0].remove();
+    // getBirdScooter();
+    while (markerDivElements[0].firstChild) {
+        markerDivElements[0].removeChild(markerDivElements[0].lastChild)
+    }
 });
 
 const allButton = document.getElementById("allFilter")
 allButton.addEventListener("click",function() {
+
     getCapitalBike();
     getHelbizScooter();
     getBirdScooter();
 });
 
-map;
-addTiles;
+// map;
+// addTiles;
 
 
 // import Example from "./scripts/example";

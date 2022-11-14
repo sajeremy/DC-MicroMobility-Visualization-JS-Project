@@ -24,6 +24,11 @@ export async function getHelbizScooter() {
             lat = helbizScooterArr[i].lat
             lon = helbizScooterArr[i].lon
             addHelbizMarker(lat, lon);  
+
+            //add id attribute for bike and scooter
+            // helbizMarkerID();
+            
+            // debugger
             availableBikes += 1;
         };
     }
@@ -46,7 +51,7 @@ let addHelbizMarker = function(lat,lon) {
                  .openPopup();
     helbizMarker.addTo(map)
 
-    return helbizMarker;
+    // return helbizMarker;
 };
 
 //Helbiz Scooter Async Function Helpers
@@ -60,3 +65,10 @@ function updateNumHelbizScooters(availableBikes) {
     let numHelbizScooters = `Currently ${availableBikes} Helbiz scooters are available`; 
     document.getElementById("helbizScooter").innerHTML = numHelbizScooters;
 }
+// function helbizMarkerID() {
+//     const markerDivElements = document.getElementsByClassName("leaflet-pane leaflet-marker-pane")
+//     let marker = markerDivElements[0].lastChild;
+//     let att = document.createAttribute("id");
+//     att.value = "helbizMarker";
+//     marker.setAttributeNode(att);
+// }

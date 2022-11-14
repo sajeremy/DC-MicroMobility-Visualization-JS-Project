@@ -17,16 +17,18 @@ export async function getCapitalBike() {
 
     let numBikes = capitalBikeArr.length;
     let availableBikes = 0;
+    let bikeMarkerArr = [];
 
     // Create markers for bikes not disabled or reserved 
     for (let i=0; i < numBikes; i++) {     
         if (bikeNotDisabeled(i) || bikeNotReserved(i)) {
             lat = capitalBikeArr[i].lat
             lon = capitalBikeArr[i].lon
-            addCapitalMarker(lat, lon);  
+            bikeMarkerArr.push(addCapitalMarker(lat, lon));  
             availableBikes += 1;
         };
     }
+    L.layerGroup(bikeMarkerArr);
     updateNumCapitalBikes(availableBikes);
 }
 
