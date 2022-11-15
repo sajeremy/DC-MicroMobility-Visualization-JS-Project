@@ -6,7 +6,7 @@ import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
 
 //Bike, Scooter APIs with map
-import {createMap} from './scripts/map'
+import {map} from './scripts/map'
 import {getCapitalBike} from './scripts/capitalBike'
 import {getHelbizScooter} from './scripts/helbizScooter'
 import {getBirdScooter} from './scripts/birdScooter'
@@ -96,9 +96,16 @@ window.addEventListener("click",function(event) {
         viewMap.style.opacity = "100";
         console.log("Window was clicked");
     }
-})
-    
+});
 
+console.log(map.getBounds()._northEast.lat);
+console.log(map.getBounds()._northEast.lng);
+console.log(map.getBounds()._southWest.lat);
+console.log(map.getBounds()._southWest.lng);
+
+viewMap.addEventListener("drag",function(event) {
+    console.log("map was clicked")
+});
 
 // const allButton = document.getElementById("allFilter")
 // allButton.addEventListener("click",function() {

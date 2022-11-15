@@ -41,7 +41,8 @@ let birdScooterIcon = L.icon({
 let addBirdMarker = function(lat,lon,scooter) {
     let birdMarker = L.marker([lat,lon], {icon: birdScooterIcon})
     birdMarker.bindPopup('<b>Bird</b> <br>' + 
-                "<img src='./imgs/helbizScooter.png'>" +
+                "<img src='./imgs/helbizScooter.png' width='100px'>" +
+                `Last Updated: ${Date()}<br>` +
                 `Charge: ${scooter.battery_level}%<br>`+
                 '<a href="https://www.bird.co/bird-access-dc/"' +
                 'target="_blank">Reserve Me</a>')

@@ -39,11 +39,15 @@ let capitalBikeIcon = L.icon({
     iconAnchor: [28,14]
 });
 
+//Capital Bike Marker Cluster
+// let capitalMarkerClusters = L.markerClusterGroup();
+
 //Capital Bike Set Maker onto Map
 let addCapitalMarker = function(lat,lon) {
     let capitalMarker = L.marker([lat,lon], {icon: capitalBikeIcon})
     capitalMarker.bindPopup('<b>Capital Bikeshare</b> <br>' +
                 "<img src='./imgs/capitalBike.png'>" + 
+                `Last Updated: ${Date()}<br>` +
                 '<a href="https://capitalbikeshare.com/"' +
                 'target="_blank">Reserve Me</a>')
                 .openPopup();
