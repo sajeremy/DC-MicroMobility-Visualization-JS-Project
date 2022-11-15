@@ -23,8 +23,12 @@ helbizButton.addEventListener("click",function() {
 
     if (!buttonArr.includes("helbiz")) {
         buttonArr.push("helbiz");
+        document.getElementById('helbizFilter').className = "greenFilter"
         getHelbizScooter();
     } else {
+        document.getElementById('helbizFilter').className = "noFilter"
+        document.getElementById('capitalFilter').className = "noFilter"
+        document.getElementById('birdFilter').className = "noFilter"
         while (markerDivElements[0].firstChild) {
             markerDivElements[0].removeChild(markerDivElements[0].lastChild)
         }
@@ -46,8 +50,12 @@ capitalButton.addEventListener("click",function() {
 
     if (!buttonArr.includes("capital")) {
         buttonArr.push("capital");
+        document.getElementById('capitalFilter').className = "greenFilter"
         getCapitalBike();
     } else {
+        document.getElementById('helbizFilter').className = "noFilter"
+        document.getElementById('capitalFilter').className = "noFilter"
+        document.getElementById('birdFilter').className = "noFilter"
         while (markerDivElements[0].firstChild) {
             markerDivElements[0].removeChild(markerDivElements[0].lastChild)
         }
@@ -62,8 +70,12 @@ birdButton.addEventListener("click",function() {
 
     if (!buttonArr.includes("bird")) {
         buttonArr.push("bird");
+        document.getElementById('birdFilter').className = "greenFilter"
         getBirdScooter();
     } else {
+        document.getElementById('helbizFilter').className = "noFilter"
+        document.getElementById('capitalFilter').className = "noFilter"
+        document.getElementById('birdFilter').className = "noFilter"
         while (markerDivElements[0].firstChild) {
             markerDivElements[0].removeChild(markerDivElements[0].lastChild)
         }
