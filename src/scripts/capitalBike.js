@@ -28,7 +28,8 @@ export async function getCapitalBike() {
             availableBikes += 1;
         };
     }
-    L.layerGroup(bikeMarkerArr);
+    
+    map.addLayer(capitalMarkerClusters)
     updateNumCapitalBikes(availableBikes);
 }
 
@@ -40,19 +41,24 @@ let capitalBikeIcon = L.icon({
 });
 
 //Capital Bike Marker Cluster
-// let capitalMarkerClusters = L.markerClusterGroup();
+let capitalMarkerClusters = L.markerClusterGroup({
+    spiderfyOnMaxZoom: false,
+	showCoverageOnHover: false,
+	zoomToBoundsOnClick: true
+});
 
 //Capital Bike Set Maker onto Map
 let addCapitalMarker = function(lat,lon) {
     let capitalMarker = L.marker([lat,lon], {icon: capitalBikeIcon})
-    capitalMarker.bindPopup('<b>Capital Bikeshare</b> <br>' +
-                "<img src='./imgs/capitalBike.png'>" + 
-                `Last Updated: ${Date()}<br>` +
-                '<a href="https://capitalbikeshare.com/"' +
-                'target="_blank">Reserve Me</a>')
-                .openPopup();
-    capitalMarker.addTo(map)
+    let capitalPopup = '<b>Capital Bikeshare</b> <br>' +
+                        "<img src='./imgs/capitalBike.png'>" + 
+                        `Last Updated: ${Date()}<br>` +
+                        '<a href="https://capitalbikeshare.com/"' +
+                        'target="_blank">Reserve Me</a>'
+    capitalMarker.bindPopup(capitalPopup).openPopup();
 
+    // capitalMarker.addTo(map)
+    capitalMarkerClusters.addLayer(capitalMarker)
     return capitalMarker;
 };
 
