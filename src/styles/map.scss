@@ -1,13 +1,14 @@
 #leafletMap  {
-   height: 600px;
+   height: 500px;
+   opacity: 0;
    width: 90%;
    margin-top: 5%;
    margin-left: 5%;
    margin-right: 5%;
 
-   border: 2px;
-   border-color: #333;
-   border-style: solid;
+   // border: 2px;
+   // border-color: #333;
+   // border-style: solid;
    border-radius: 10px;
    
 }
@@ -18,9 +19,9 @@ body {
    // background: linear-gradient(0deg, rgba(34,193,195,1) 14%, rgba(253,187,45,1) 100%);
 }
 
-:root {
-   --map-tiles-filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
-}
+// :root {
+//    --map-tiles-filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
+// }
 
 // @media (prefers-color-scheme: dark) {
 //    .darkMode {

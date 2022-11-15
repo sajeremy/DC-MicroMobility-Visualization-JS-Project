@@ -6,7 +6,7 @@ import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
 
 //Bike, Scooter APIs with map
-import {map, addTiles} from './scripts/map'
+import {createMap} from './scripts/map'
 import {getCapitalBike} from './scripts/capitalBike'
 import {getHelbizScooter} from './scripts/helbizScooter'
 import {getBirdScooter} from './scripts/birdScooter'
@@ -85,6 +85,20 @@ birdButton.addEventListener("click",function() {
     }
 
 });
+
+//Close Modal when Clicking outside of Modal Region
+const modal = document.getElementById("microMobilityModal")
+const viewMap = document.getElementById("leafletMap")
+
+window.addEventListener("click",function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        viewMap.style.opacity = "100";
+        console.log("Window was clicked");
+    }
+})
+    
+
 
 // const allButton = document.getElementById("allFilter")
 // allButton.addEventListener("click",function() {
