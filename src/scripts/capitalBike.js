@@ -34,7 +34,7 @@ export async function getCapitalBike() {
 
 //Capital Bike Icon Image
 let capitalBikeIcon = L.icon({
-    iconUrl: './imgs/capitalBike.png',
+    iconUrl: './imgs/red.png',
     iconSize: [40,28],
     iconAnchor: [28,14]
 });
@@ -42,7 +42,8 @@ let capitalBikeIcon = L.icon({
 //Capital Bike Set Maker onto Map
 let addCapitalMarker = function(lat,lon) {
     let capitalMarker = L.marker([lat,lon], {icon: capitalBikeIcon})
-    capitalMarker.bindPopup('<b>Capital Bikeshare</b> <br>' + 
+    capitalMarker.bindPopup('<b>Capital Bikeshare</b> <br>' +
+                "<img src='./imgs/capitalBike.png'>" + 
                 '<a href="https://capitalbikeshare.com/"' +
                 'target="_blank">Reserve Me</a>')
                 .openPopup();

@@ -37,7 +37,7 @@ export async function getHelbizScooter() {
 
 //Helbiz Scooter Icon Image
 let helbizScooterIcon = L.icon({
-    iconUrl: './imgs/helbizScooter.png',
+    iconUrl: './imgs/blue.png',
     iconSize: [40,28],
     iconAnchor: [28,14]
 });
@@ -45,7 +45,8 @@ let helbizScooterIcon = L.icon({
 //Helbiz Scooter Set Marker onto Map
 let addHelbizMarker = function(lat,lon) {
     let helbizMarker = L.marker([lat,lon], {icon: helbizScooterIcon})
-    helbizMarker.bindPopup('<b>Helbiz</b> <br>' + 
+    helbizMarker.bindPopup('<b>Helbiz</b> <br>' +
+                "<img src='./imgs/helbizScooter.png'>" +
                 '<a href="https://helbiz.com/"' +
                 'target="_blank">Reserve Me</a>')
                  .openPopup();

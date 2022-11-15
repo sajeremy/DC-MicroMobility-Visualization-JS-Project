@@ -23,7 +23,7 @@ export async function getBirdScooter() {
         if (bikeNotDisabeled(i) || bikeNotReserved(i)) {
             lat = birdScooterArr[i].lat
             lon = birdScooterArr[i].lon
-            addBirdMarker(lat, lon, i);  
+            addBirdMarker(lat, lon, birdScooterArr[i]);  
             availableBikes += 1;
         };
     }
@@ -32,15 +32,17 @@ export async function getBirdScooter() {
 
 //Bird Scooter Icon Image
 let birdScooterIcon = L.icon({
-    iconUrl: './imgs/helbizScooter.png',
+    iconUrl: './imgs/green.png',
     iconSize: [40,28],
     iconAnchor: [28,14]
 });
 
 //Bird Scooter Set Marker onto Map
-let addBirdMarker = function(lat,lon,ind) {
+let addBirdMarker = function(lat,lon,scooter) {
     let birdMarker = L.marker([lat,lon], {icon: birdScooterIcon})
     birdMarker.bindPopup('<b>Bird</b> <br>' + 
+                "<img src='./imgs/helbizScooter.png'>" +
+                `Charge: ${scooter.battery_level}%<br>`+
                 '<a href="https://www.bird.co/bird-access-dc/"' +
                 'target="_blank">Reserve Me</a>')
                  .openPopup();

@@ -108,8 +108,7 @@ h1.webTitle {
 
 .topnav a:first-child,
 .topnav a:nth-child(2),
-.topnav a:nth-child(3),
-.topnav a:nth-child(4) {
+.topnav a:nth-child(3) {
   float: left;
   font-size: 20px;
 }

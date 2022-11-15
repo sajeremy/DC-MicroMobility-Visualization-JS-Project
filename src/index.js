@@ -28,40 +28,59 @@ helbizButton.addEventListener("click",function() {
         while (markerDivElements[0].firstChild) {
             markerDivElements[0].removeChild(markerDivElements[0].lastChild)
         }
-        let idx = buttonArr.findIndex(el => el === "helbizer");
+        let idx = buttonArr.findIndex(el => el === "helbiz");
         buttonArr.splice(idx,1);
 
     }
-    
-    
+      
 });
 
 const capitalButton = document.getElementById("capitalFilter")
 capitalButton.addEventListener("click",function() {
     // debugger
     // markerDivElements[0].remove();
-    while (markerDivElements[0].firstChild) {
-        markerDivElements[0].removeChild(markerDivElements[0].lastChild)
+    // while (markerDivElements[0].firstChild) {
+    //     markerDivElements[0].removeChild(markerDivElements[0].lastChild)
+    // }
+    // getCapitalBike();
+
+    if (!buttonArr.includes("capital")) {
+        buttonArr.push("capital");
+        getCapitalBike();
+    } else {
+        while (markerDivElements[0].firstChild) {
+            markerDivElements[0].removeChild(markerDivElements[0].lastChild)
+        }
+        let idx = buttonArr.findIndex(el => el === "capital");
+        buttonArr.splice(idx,1);
+
     }
-    getCapitalBike();
 });
 
 const birdButton = document.getElementById("birdFilter")
 birdButton.addEventListener("click",function() {
-    // markerDivElements[0].remove();
-    // getBirdScooter();
-    while (markerDivElements[0].firstChild) {
-        markerDivElements[0].removeChild(markerDivElements[0].lastChild)
+
+    if (!buttonArr.includes("bird")) {
+        buttonArr.push("bird");
+        getBirdScooter();
+    } else {
+        while (markerDivElements[0].firstChild) {
+            markerDivElements[0].removeChild(markerDivElements[0].lastChild)
+        }
+        let idx = buttonArr.findIndex(el => el === "bird");
+        buttonArr.splice(idx,1);
+
     }
+
 });
 
-const allButton = document.getElementById("allFilter")
-allButton.addEventListener("click",function() {
+// const allButton = document.getElementById("allFilter")
+// allButton.addEventListener("click",function() {
 
-    getCapitalBike();
-    getHelbizScooter();
-    getBirdScooter();
-});
+//     getCapitalBike();
+//     getHelbizScooter();
+//     getBirdScooter();
+// });
 
 // map;
 // addTiles;
