@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: #b7cce0;
 }
 
 /* Box sizing rules */
@@ -89,22 +89,22 @@ select {
   }
 }
 h1.webTitle {
-  color: #04AA6D;
-  background-color: whitesmoke;
+  color: #2f455b;
+  background-color: #b7cce0;
   text-align: center;
   font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #2f455b;
 }
 
 .topnav a:first-child,
 .topnav a:nth-child(2),
 .topnav a:nth-child(3) {
   float: left;
-  font-size: 20px;
 }
 
 .topnav a {
@@ -113,16 +113,19 @@ h1.webTitle {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .topnav a:hover {
-  background-color: #04AA6D;
+  background-color: #f07a2d;
   color: #333;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
 }
 
 .greenFilter {
-  background-color: #04AA6D;
+  background-color: #f07a2d;
   color: #333;
 }
 

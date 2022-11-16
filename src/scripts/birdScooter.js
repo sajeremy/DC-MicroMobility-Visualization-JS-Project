@@ -1,3 +1,9 @@
+//Font Awesome Icons
+import '@fortawesome/fontawesome-free/js/fontawesome'
+import '@fortawesome/fontawesome-free/js/solid'
+import '@fortawesome/fontawesome-free/js/regular'
+import '@fortawesome/fontawesome-free/js/brands'
+
 import {map} from './map'
 
 //Declare Constants and Variables
@@ -71,11 +77,11 @@ let addBirdMarker = function(lat,lon,scooter, firstCluster) {
     let birdPopup = '<b>Bird</b> <br>' + 
                     "<img src='./imgs/birdScooter.png' width='100px'>" +
                     `Last Updated: ${Date()}<br>` +
-                    `Charge: ${scooter.battery_level}%<br>`+
+                    "<b>Charge:<b>"+ ` ${scooter.battery_level}%` + '  ' +
+                    batteryIcon(scooter.battery_level) +  '<br>'+
                     '<a href="https://www.bird.co/bird-access-dc/"' +
                     'target="_blank">Reserve Me</a>'
     birdMarker.bindPopup(birdPopup).openPopup();
-
     birdMarkerClusters.addLayer(birdMarker);
     return birdMarker;
     // birdMarker.addTo(map)
@@ -91,6 +97,23 @@ function bikeNotReserved(idx) {
 function updateNumBirdScooters(availableBikes) {
     let numBirdScooters = `Currently ${availableBikes} Bird scooters are available`; 
     document.getElementById("birdScooter").innerHTML = numBirdScooters;
+}
+
+function batteryIcon(batteryLevel) {
+    let result;
+
+    if (batteryLevel <= 15) {
+        result = '<i class="fa-solid fa-battery-empty"></i>'
+    } else if (batteryLevel <= 40 && batteryLevel > 15) {
+        result = '<i class="fa-solid fa-battery-quarter"></i>'
+    } else if (batteryLevel <= 65 && batteryLevel > 40) {
+        result = '<i class="fa-solid fa-battery-half"></i>'
+    } else if (batteryLevel <=85  && batteryLevel > 65) {
+        result = '<i class="fa-solid fa-battery-three-quarters"></i>'
+    } else {
+        result = '<i class="fa-solid fa-battery-full"></i>'
+    }
+    return result;
 }
 
 export {birdMarkerArr, birdMarkerClusters};
