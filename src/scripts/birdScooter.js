@@ -76,7 +76,7 @@ let addBirdMarker = function(lat,lon,scooter, firstCluster) {
     let birdMarker = L.marker([lat,lon], {icon: birdScooterIcon})
     let birdPopup = '<b>Bird</b> <br>' + 
                     "<img src='./imgs/birdScooter.png' width='100px'>" +
-                    `Last Updated: ${Date()}<br>` +
+                    `Last Updated: ${Date().slice(0,24)}<br>` +
                     "<b>Charge:<b>"+ ` ${scooter.battery_level}%` + '  ' +
                     batteryIcon(scooter.battery_level) +  '<br>'+
                     '<a href="https://www.bird.co/bird-access-dc/"' +
@@ -98,20 +98,19 @@ function updateNumBirdScooters(availableBikes) {
     let numBirdScooters = `Currently ${availableBikes} Bird scooters are available`; 
     document.getElementById("birdScooter").innerHTML = numBirdScooters;
 }
-
 function batteryIcon(batteryLevel) {
     let result;
 
     if (batteryLevel <= 15) {
-        result = '<i class="fa-solid fa-battery-empty"></i>'
+        result = '<i class="fa-solid fa-battery-empty fa-2xl"></i>'
     } else if (batteryLevel <= 40 && batteryLevel > 15) {
-        result = '<i class="fa-solid fa-battery-quarter"></i>'
+        result = '<i class="fa-solid fa-battery-quarter fa-2xl"></i>'
     } else if (batteryLevel <= 65 && batteryLevel > 40) {
-        result = '<i class="fa-solid fa-battery-half"></i>'
+        result = '<i class="fa-solid fa-battery-half fa-2xl"></i>'
     } else if (batteryLevel <=85  && batteryLevel > 65) {
-        result = '<i class="fa-solid fa-battery-three-quarters"></i>'
+        result = '<i class="fa-solid fa-battery-three-quarters fa-2xl"></i>'
     } else {
-        result = '<i class="fa-solid fa-battery-full"></i>'
+        result = '<i class="fa-solid fa-battery-full fa-2xl"></i>'
     }
     return result;
 }

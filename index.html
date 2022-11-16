@@ -22,6 +22,7 @@
     <!-- LeafletScripts -->
     
     <title>DC MicroMobility</title>
+    <link type="image/png" sizes="32x32" rel="icon" href="./imgs/icons8-mobility-32.png">
   </head>
 
   <body>
@@ -31,15 +32,13 @@
       <a href="#" id="birdFilter">Bird</a>
       <a href="#" id="helbizFilter">Helbiz</a>
       <a href="#" id="capitalFilter">Capital</a>
-      <!-- <a href="#"id="allFilter">All</a> -->
-
-
       <a href="https://github.com/sajeremy" target="_blank">
         <i class="fa-brands fa-github fa-xl"></i>
       </a>
       <a href="https://www.linkedin.com/in/jeremy-santiago-11b05367" target="_blank">
         <i class="fa-brands fa-linkedin fa-xl"></i>
       </a>
+      <a href="#" id="modalToggle">Info</a>
     </div>
 
     <div id="leafletMap"></div>
@@ -51,14 +50,21 @@
     <div id="microMobilityModal" class="modal">
       <div class="modal-content">
         <div class="modal-header">
-          <h2>Washington DC Micromobility Visualization</h2>
+          <h2>Motivation</h2>
         </div>
         <div class="modal-body">
-          <p>Descrtiption of site</p><br>
-          <img src="./imgs/mapExample.png" alt="sample" width="300px" height="300px">
+          <div class="modal-body-right">
+            <p>The motivation of creating this webpage was to visualize the different 
+              micromobility shared services offered in Washington, D.C. 
+            </p><br>
+          </div>
+            <div class="modal-body-left">
+              <img src="./imgs/Map ScreenShot with Popup.png" alt="sample" width="200px" height="250px">
+              <img src="./imgs/Nav Bar Colors.png" alt="sample" width="200px" height="30px">
+            </div>
         </div>
         <div class="modal-footer">
-          <p>Legend for map</p>
+          <a href="https://ddot.dc.gov/page/dockless-api">Data Source: DC Dockless API</a>
         </div>
       </div>
     </div>

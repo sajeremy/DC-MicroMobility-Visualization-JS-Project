@@ -99,17 +99,24 @@ birdButton.addEventListener("click",function() {
 });
 
 //Close Modal when Clicking outside of Modal Region
-const modal = document.getElementById("microMobilityModal")
+const modalContainer = document.getElementById("microMobilityModal")
 const viewMap = document.getElementById("leafletMap")
 
 window.addEventListener("click",function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target == modalContainer) {
+        modalContainer.style.display = "none";
         viewMap.style.opacity = "100";
         console.log("Window was clicked");
     }
 });
 
+const infoButton = document.getElementById("modalToggle")
+debugger
+
+infoButton.addEventListener("click",function() {
+    modalContainer.style.display = "block";
+    viewMap.style.opacity = "0";
+});
 // console.log(map.getBounds()._northEast.lat);
 // console.log(map.getBounds()._northEast.lng);
 // console.log(map.getBounds()._southWest.lat);

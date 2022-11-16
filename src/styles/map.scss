@@ -1,5 +1,5 @@
 #leafletMap  {
-   height: 550px;
+   height: 600px;
    opacity: 0;
    width: 90%;
    margin-top: 5%;
@@ -18,6 +18,21 @@ body {
    // background: rgb(34,193,195);
    // background: linear-gradient(0deg, rgba(34,193,195,1) 14%, rgba(253,187,45,1) 100%);
 }
+
+// .leaflet-popup-content-wrapper {
+//    background-color:red;
+//    color: red
+// }
+
+// .leaflet-popup-content-wrapper .leaflet-popup-content {
+//    background-color:blue;
+//    color: blue;
+// }
+
+// .leaflet-popup-tip-container {
+//    background-color:green;
+//    color: green;
+// }
 
 
 // :root {

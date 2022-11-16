@@ -83,7 +83,7 @@ let addHelbizMarker = function(lat,lon, firstCluster) {
     let helbizMarker = L.marker([lat,lon], {icon: helbizScooterIcon})
     let helbizPopup = '<b>Helbiz</b> <br>' +
                       "<img src='./imgs/helbizScooter.png' width='100px'>" +
-                      `Last Updated: ${Date()}<br>` +
+                      `Last Updated: ${Date().slice(0,24)}<br>` +
                       '<a href="https://helbiz.com/"' +
                       'target="_blank">Reserve Me</a>'                 
     helbizMarker.bindPopup(helbizPopup).openPopup();
