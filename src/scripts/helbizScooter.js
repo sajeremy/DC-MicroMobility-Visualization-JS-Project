@@ -27,11 +27,22 @@ export async function getHelbizScooter() {
 
             //add id attribute for bike and scooter
             // helbizMarkerID();
-            
+        
             // debugger
             availableBikes += 1;
         };
     }
+    console.log(map.getBounds()._northEast.lat);
+    console.log(map.getBounds()._northEast.lng);
+    console.log(map.getBounds()._southWest.lat);
+    console.log(map.getBounds()._southWest.lng);
+    const mapPaneXY = document.getElementsByClassName("leaflet-pane leaflet-map-pane");
+    const mapPaneZ = document.getElementsByClassName("leaflet-proxy leaflet-zoom-animated");
+    console.log(mapPaneXY)
+    console.log(mapPaneXY[0])
+    console.log(mapPaneZ)
+    console.log(mapPaneZ[0])
+
     updateNumHelbizScooters(availableBikes);
 }
 
@@ -52,7 +63,7 @@ let addHelbizMarker = function(lat,lon) {
                 'target="_blank">Reserve Me</a>')
                  .openPopup();
     helbizMarker.addTo(map)
-
+    
     // return helbizMarker;
 };
 

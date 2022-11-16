@@ -98,10 +98,10 @@ window.addEventListener("click",function(event) {
     }
 });
 
-console.log(map.getBounds()._northEast.lat);
-console.log(map.getBounds()._northEast.lng);
-console.log(map.getBounds()._southWest.lat);
-console.log(map.getBounds()._southWest.lng);
+// console.log(map.getBounds()._northEast.lat);
+// console.log(map.getBounds()._northEast.lng);
+// console.log(map.getBounds()._southWest.lat);
+// console.log(map.getBounds()._southWest.lng);
 
 viewMap.addEventListener("drag",function(event) {
     console.log("map was clicked")
