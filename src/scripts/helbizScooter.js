@@ -5,6 +5,8 @@ const helbizScooterURL = "https://admin-api-prod.helbizscooters.com//reporting/w
 let helbizData;
 let lat;
 let lon;
+let helbizMarkerArr;
+let firstCluster = 0;
 
 //Fetch data from Helbiz Scooter API
 export async function getHelbizScooter() {
@@ -17,54 +19,76 @@ export async function getHelbizScooter() {
 
     let numBikes = helbizScooterArr.length;
     let availableBikes = 0;
+    helbizMarkerArr =[];
 
     // Create markers for bikes not disabled or reserved 
     for (let i=0; i < numBikes; i++) {     
         if (bikeNotDisabeled(i) || bikeNotReserved(i)) {
             lat = helbizScooterArr[i].lat
             lon = helbizScooterArr[i].lon
-            addHelbizMarker(lat, lon);  
-
-            //add id attribute for bike and scooter
-            // helbizMarkerID();
-        
-            // debugger
+            helbizMarkerArr.push(addHelbizMarker(lat, lon, firstCluster));  
             availableBikes += 1;
+            // addHelbizMarker(lat, lon);  
         };
     }
-    console.log(map.getBounds()._northEast.lat);
-    console.log(map.getBounds()._northEast.lng);
-    console.log(map.getBounds()._southWest.lat);
-    console.log(map.getBounds()._southWest.lng);
-    const mapPaneXY = document.getElementsByClassName("leaflet-pane leaflet-map-pane");
-    const mapPaneZ = document.getElementsByClassName("leaflet-proxy leaflet-zoom-animated");
-    console.log(mapPaneXY)
-    console.log(mapPaneXY[0])
-    console.log(mapPaneZ)
-    console.log(mapPaneZ[0])
 
+    map.addLayer(helbizMarkerClusters)
     updateNumHelbizScooters(availableBikes);
+
+    // console.log(map.getBounds()._northEast.lat);
+    // console.log(map.getBounds()._northEast.lng);
+    // console.log(map.getBounds()._southWest.lat);
+    // console.log(map.getBounds()._southWest.lng);
+    // const mapPaneXY = document.getElementsByClassName("leaflet-pane leaflet-map-pane");
+    // const mapPaneZ = document.getElementsByClassName("leaflet-proxy leaflet-zoom-animated");
+    // console.log(mapPaneXY)
+    // console.log(mapPaneXY[0])
+    // console.log(mapPaneZ)
+    // console.log(mapPaneZ[0])
+  
 }
 
 //Helbiz Scooter Icon Image
 let helbizScooterIcon = L.icon({
     iconUrl: './imgs/blue.png',
-    iconSize: [40,28],
+    iconSize: [36,36],
     iconAnchor: [28,14]
 });
 
+//Create Helbiz Scooter Marker Cluster
+let helbizMarkerClusters = L.markerClusterGroup({
+        iconCreateFunction: function(cluster) {
+        return L.divIcon({html: '<b>'+cluster.getChildCount()+'</b>',
+                        className: 'helbizIcon',
+                        iconAnchor: [24,24]});
+    },
+    spiderfyOnMaxZoom: true,
+	showCoverageOnHover: false,
+	zoomToBoundsOnClick: true,
+    animate: true
+});
+
 //Helbiz Scooter Set Marker onto Map
-let addHelbizMarker = function(lat,lon) {
+let addHelbizMarker = function(lat,lon, firstCluster) {
+    //Remove previous cluster layer after every API call once initiated
+    if (firstCluster > 0) {
+        helbizMarkerClusters.removeLayer(helbizMarker);
+    } else {
+        firstCluster = 1;
+    }
+    //Create Marker and Pop Up for Visualization
     let helbizMarker = L.marker([lat,lon], {icon: helbizScooterIcon})
-    helbizMarker.bindPopup('<b>Helbiz</b> <br>' +
-                "<img src='./imgs/helbizScooter.png' width='100px'>" +
-                `Last Updated: ${Date()}<br>` +
-                '<a href="https://helbiz.com/"' +
-                'target="_blank">Reserve Me</a>')
-                 .openPopup();
-    helbizMarker.addTo(map)
-    
-    // return helbizMarker;
+    let helbizPopup = '<b>Helbiz</b> <br>' +
+                      "<img src='./imgs/helbizScooter.png' width='100px'>" +
+                      `Last Updated: ${Date()}<br>` +
+                      '<a href="https://helbiz.com/"' +
+                      'target="_blank">Reserve Me</a>'                 
+    helbizMarker.bindPopup(helbizPopup).openPopup();
+
+    helbizMarkerClusters.addLayer(helbizMarker);
+    return helbizMarker;
+
+    // helbizMarker.addTo(map)
 };
 
 //Helbiz Scooter Async Function Helpers
@@ -78,6 +102,9 @@ function updateNumHelbizScooters(availableBikes) {
     let numHelbizScooters = `Currently ${availableBikes} Helbiz scooters are available`; 
     document.getElementById("helbizScooter").innerHTML = numHelbizScooters;
 }
+
+export {helbizMarkerArr, helbizMarkerClusters};
+
 // function helbizMarkerID() {
 //     const markerDivElements = document.getElementsByClassName("leaflet-pane leaflet-marker-pane")
 //     let marker = markerDivElements[0].lastChild;

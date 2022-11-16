@@ -7,8 +7,8 @@ import '@fortawesome/fontawesome-free/js/brands'
 
 //Bike, Scooter APIs with map
 import {map} from './scripts/map'
-import {getCapitalBike} from './scripts/capitalBike'
-import {getHelbizScooter} from './scripts/helbizScooter'
+import {capitalMarkerArr, getCapitalBike, capitalMarkerClusters} from './scripts/capitalBike'
+import {getHelbizScooter, helbizMarkerArr, helbizMarkerClusters} from './scripts/helbizScooter'
 import {getBirdScooter} from './scripts/birdScooter'
 
 const markerDivElements = document.getElementsByClassName("leaflet-pane leaflet-marker-pane")
@@ -26,14 +26,20 @@ helbizButton.addEventListener("click",function() {
         document.getElementById('helbizFilter').className = "greenFilter"
         getHelbizScooter();
     } else {
+        helbizMarkerClusters.removeLayers(helbizMarkerArr)
         document.getElementById('helbizFilter').className = "noFilter"
-        document.getElementById('capitalFilter').className = "noFilter"
-        document.getElementById('birdFilter').className = "noFilter"
-        while (markerDivElements[0].firstChild) {
-            markerDivElements[0].removeChild(markerDivElements[0].lastChild)
-        }
         let idx = buttonArr.findIndex(el => el === "helbiz");
         buttonArr.splice(idx,1);
+
+        // // // **Alternative Approach using DOM Manipulation**
+        // document.getElementById('helbizFilter').className = "noFilter"
+        // document.getElementById('capitalFilter').className = "noFilter"
+        // document.getElementById('birdFilter').className = "noFilter"
+        // while (markerDivElements[0].firstChild) {
+        //     markerDivElements[0].removeChild(markerDivElements[0].lastChild)
+        // }
+        // let idx = buttonArr.findIndex(el => el === "helbiz");
+        // buttonArr.splice(idx,1);
 
     }
       
@@ -41,26 +47,26 @@ helbizButton.addEventListener("click",function() {
 
 const capitalButton = document.getElementById("capitalFilter")
 capitalButton.addEventListener("click",function() {
-    // debugger
-    // markerDivElements[0].remove();
-    // while (markerDivElements[0].firstChild) {
-    //     markerDivElements[0].removeChild(markerDivElements[0].lastChild)
-    // }
-    // getCapitalBike();
 
     if (!buttonArr.includes("capital")) {
         buttonArr.push("capital");
         document.getElementById('capitalFilter').className = "greenFilter"
         getCapitalBike();
     } else {
-        document.getElementById('helbizFilter').className = "noFilter"
+        capitalMarkerClusters.removeLayers(capitalMarkerArr)
         document.getElementById('capitalFilter').className = "noFilter"
-        document.getElementById('birdFilter').className = "noFilter"
-        while (markerDivElements[0].firstChild) {
-            markerDivElements[0].removeChild(markerDivElements[0].lastChild)
-        }
         let idx = buttonArr.findIndex(el => el === "capital");
         buttonArr.splice(idx,1);
+    
+        // // // **Alternative Approach using DOM Manipulation**
+        // document.getElementById('helbizFilter').className = "noFilter"
+        // document.getElementById('capitalFilter').className = "noFilter"
+        // document.getElementById('birdFilter').className = "noFilter"
+        // while (markerDivElements[0].firstChild) {
+        //     markerDivElements[0].removeChild(markerDivElements[0].lastChild)
+        // }
+        // let idx = buttonArr.findIndex(el => el === "capital");
+        // buttonArr.splice(idx,1);
 
     }
 });

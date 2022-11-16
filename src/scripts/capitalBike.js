@@ -5,6 +5,7 @@ const capitalBikeURL = "https://gbfs.capitalbikeshare.com/gbfs/en/free_bike_stat
 let capitalData;
 let lat;
 let lon;
+let capitalMarkerArr;
 let firstCluster = 0;
 
 //Fetch data from Capital Bikeshare API
@@ -18,16 +19,15 @@ export async function getCapitalBike() {
 
     let numBikes = capitalBikeArr.length;
     let availableBikes = 0;
-    let bikeMarkerArr = [];
+    capitalMarkerArr = [];
     
 
     // Create markers for bikes not disabled or reserved 
-    for (let i=0; i < 1; i++) {  
-        bikeMarkerArr = [];   
+    for (let i=0; i < numBikes; i++) {   
         if (bikeNotDisabeled(i) || bikeNotReserved(i)) {
             lat = capitalBikeArr[i].lat
             lon = capitalBikeArr[i].lon
-            bikeMarkerArr.push(addCapitalMarker(lat, lon, firstCluster));  
+            capitalMarkerArr.push(addCapitalMarker(lat, lon, firstCluster));  
             availableBikes += 1;
         };
     }
@@ -43,21 +43,29 @@ let capitalBikeIcon = L.icon({
     iconAnchor: [28,14]
 });
 
-//Capital Bike Marker Cluster
+// // **Attempt for custom Icon creation inside markerClusterGroup**
+// iconCreateFunction: function (cluster) {
+    //     let markers = cluster.getAllChildMarkers();
+    //     let html = '<div class="capital">' + markers.length + '</div>';
+    //     return L.divIcon({html: html, className: 'capital', iconSize: L.point(32,32)});
+    // },
+
+//Create Capital Bike Marker Cluster
 let capitalMarkerClusters = L.markerClusterGroup({
-    spiderfyOnMaxZoom: false,
+    spiderfyOnMaxZoom: true,
 	showCoverageOnHover: false,
 	zoomToBoundsOnClick: true
 });
 
 //Capital Bike Set Maker onto Map
 let addCapitalMarker = function(lat,lon, firstCluster) {
+     //Remove previous cluster layer after every API call once initiated
     if (firstCluster > 0) {
         capitalMarkerClusters.removeLayer(capitalMarker);
     } else {
         firstCluster = 1;
     }
-
+    //Create Marker and Pop Up for Visualization
     let capitalMarker = L.marker([lat,lon], {icon: capitalBikeIcon})
     let capitalPopup = '<b>Capital Bikeshare</b> <br>' +
                         "<img src='./imgs/capitalBike.png'>" + 
@@ -68,7 +76,6 @@ let addCapitalMarker = function(lat,lon, firstCluster) {
 
     // capitalMarker.addTo(map)
     capitalMarkerClusters.addLayer(capitalMarker)
-    debugger
     return capitalMarker;
 };
 
@@ -83,3 +90,5 @@ function updateNumCapitalBikes(availableBikes) {
     let numCapitalBikes = `Currently ${availableBikes} Capital bikes are available`; 
     document.getElementById("capitalBike").innerHTML = numCapitalBikes;
 }
+
+export {capitalMarkerArr, capitalMarkerClusters};
