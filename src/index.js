@@ -23,7 +23,7 @@ helbizButton.addEventListener("click",function() {
 
     if (!buttonArr.includes("helbiz")) {
         buttonArr.push("helbiz");
-        document.getElementById('helbizFilter').className = "greenFilter"
+        document.getElementById('helbizFilter').className = "blueFilter"
         getHelbizScooter();
     } else {
         helbizMarkerClusters.removeLayers(helbizMarkerArr)
@@ -50,7 +50,7 @@ capitalButton.addEventListener("click",function() {
 
     if (!buttonArr.includes("capital")) {
         buttonArr.push("capital");
-        document.getElementById('capitalFilter').className = "greenFilter"
+        document.getElementById('capitalFilter').className = "redFilter"
         getCapitalBike();
     } else {
         capitalMarkerClusters.removeLayers(capitalMarkerArr)

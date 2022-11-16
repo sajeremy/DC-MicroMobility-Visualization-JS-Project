@@ -32,14 +32,45 @@ h1.webTitle {
 }
 
 .topnav a:hover {
-// background-color: #ddd;
+    background-color: #ddd;
     background-color:  #f07a2d;
     color: #333;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
 }
 
-.greenFilter {
-    background-color: #f07a2d;
+
+
+.redFilter {
+    background-color: #FA5252;
     color: #333;
 }
+
+.blueFilter {
+    background-color: #5C7CFA;
+    color: #333;
+}
+
+.greenFilter {
+    background-color: #94D82D;
+    color: #333;
+}
+
+#capitalfilter:hover,
+#helbizfilter:hover,
+#birdfilter:hover {
+        color: #333;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+}
+
+
+#capitalfilter:hover {
+        background-color:  #FA5252;
+    }
+#helbizfilter:hover {
+        background-color:  #5C7CFA;
+    }
+#birdfilter:hover {
+        background-color:  #94D82D;
+    }
