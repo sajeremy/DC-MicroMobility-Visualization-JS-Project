@@ -59,7 +59,21 @@
 	line-height: 30px;
 	}
 
-.helbizIcon {
+/* .helbizIcon {
 	text-align: center;
 	font: 50px;
+	color: red;
+	background-image: "./imgs/blue.png";
+} */
+.blueMarker {
+	color: black;
+	font-size: x-large;	
+}
+.redMarker {
+	color: black;
+	font-size: x-large;	
+}
+.greenMarker {
+	color: black;
+	font-size: x-large;	
 }

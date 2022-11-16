@@ -58,9 +58,12 @@ let helbizScooterIcon = L.icon({
 //Create Helbiz Scooter Marker Cluster
 let helbizMarkerClusters = L.markerClusterGroup({
         iconCreateFunction: function(cluster) {
-        return L.divIcon({html: '<b>'+cluster.getChildCount()+'</b>',
-                        className: 'helbizIcon',
-                        iconAnchor: [24,24]});
+        return L.divIcon({html: "<div class='blueMarker'>"
+                                +"<img src='./imgs/blue.png'><b>"
+                                +cluster.getChildCount()
+                                +"<b></div>",
+                                className: 'helbizIcon',
+                                iconAnchor: [24,24]});
     },
     spiderfyOnMaxZoom: true,
 	showCoverageOnHover: false,

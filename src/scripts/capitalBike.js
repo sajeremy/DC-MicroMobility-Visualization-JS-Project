@@ -39,7 +39,7 @@ export async function getCapitalBike() {
 //Capital Bike Icon Image
 let capitalBikeIcon = L.icon({
     iconUrl: './imgs/red.png',
-    iconSize: [40,28],
+    iconSize: [36,36],
     iconAnchor: [28,14]
 });
 
@@ -52,9 +52,18 @@ let capitalBikeIcon = L.icon({
 
 //Create Capital Bike Marker Cluster
 let capitalMarkerClusters = L.markerClusterGroup({
-    spiderfyOnMaxZoom: true,
-	showCoverageOnHover: false,
-	zoomToBoundsOnClick: true
+    iconCreateFunction: function(cluster) {
+    return L.divIcon({html: "<div class='redMarker'>"
+                            +"<img src='./imgs/red.png'><b>"
+                            +cluster.getChildCount()
+                            +"<b></div>",
+                            className: 'capitalIcon',
+                            iconAnchor: [24,24]});
+},
+spiderfyOnMaxZoom: true,
+showCoverageOnHover: false,
+zoomToBoundsOnClick: true,
+animate: true
 });
 
 //Capital Bike Set Maker onto Map

@@ -9,7 +9,7 @@ import '@fortawesome/fontawesome-free/js/brands'
 import {map} from './scripts/map'
 import {capitalMarkerArr, getCapitalBike, capitalMarkerClusters} from './scripts/capitalBike'
 import {getHelbizScooter, helbizMarkerArr, helbizMarkerClusters} from './scripts/helbizScooter'
-import {getBirdScooter} from './scripts/birdScooter'
+import {getBirdScooter, birdMarkerArr, birdMarkerClusters} from './scripts/birdScooter'
 
 const markerDivElements = document.getElementsByClassName("leaflet-pane leaflet-marker-pane")
 let buttonArr = [];
@@ -79,14 +79,20 @@ birdButton.addEventListener("click",function() {
         document.getElementById('birdFilter').className = "greenFilter"
         getBirdScooter();
     } else {
-        document.getElementById('helbizFilter').className = "noFilter"
-        document.getElementById('capitalFilter').className = "noFilter"
+        birdMarkerClusters.removeLayers(birdMarkerArr)
         document.getElementById('birdFilter').className = "noFilter"
-        while (markerDivElements[0].firstChild) {
-            markerDivElements[0].removeChild(markerDivElements[0].lastChild)
-        }
         let idx = buttonArr.findIndex(el => el === "bird");
         buttonArr.splice(idx,1);
+
+        // // // **Alternative Approach using DOM Manipulation**
+        // document.getElementById('helbizFilter').className = "noFilter"
+        // document.getElementById('capitalFilter').className = "noFilter"
+        // document.getElementById('birdFilter').className = "noFilter"
+        // while (markerDivElements[0].firstChild) {
+        //     markerDivElements[0].removeChild(markerDivElements[0].lastChild)
+        // }
+        // let idx = buttonArr.findIndex(el => el === "bird");
+        // buttonArr.splice(idx,1);
 
     }
 
