@@ -38,7 +38,7 @@
       <a href="https://www.linkedin.com/in/jeremy-santiago-11b05367" target="_blank">
         <i class="fa-brands fa-linkedin fa-xl"></i>
       </a>
-      <a href="#" id="modalToggle">Info</a>
+      <a href="#" id="modalToggle">info</a>
     </div>
 
     <div id="leafletMap"></div>
@@ -49,21 +49,34 @@
     <!-- Modal -->
     <div id="microMobilityModal" class="modal">
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-top">
           <h2>Motivation</h2>
         </div>
         <div class="modal-body">
-          <div class="modal-body-right">
-            <p>The motivation of creating this webpage was to visualize the different 
-              micromobility shared services offered in Washington, D.C. 
+          <div class="modal-body-left">
+            <p>Cities often have the presence of companies that provide shared micromobility (bikes, scooters, etc.) services 
+              which provide users with an app to locate and rent their respective assets.  A slight inconvenience for users 
+              though is having to navigate through multiple apps if they want to locate bikes or scooters near them irrespective
+              of the company they use.  This webpage consolidates API information on one map to allow the users to select the best
+              option for them utilizing Washington, DC and 3 companies (Bird, Helbiz, Capital Bikeshare) as a case study demonstration.    
             </p><br>
+            <h2>How to Use</h2>
+            <ol>
+              <li>Scroll your mouse to zoom into areas of interest</li>
+              <li>Select one of the color coded filters that fetch live data from the respective company</li>
+              <li>Bold number on bottom left indicate number of bikes scooters in that region</li>
+              <li>Select markers to learn information about the respective bike or scooter</li>
+            </ol>
+              
+
           </div>
-            <div class="modal-body-left">
-              <img src="./imgs/Map ScreenShot with Popup.png" alt="sample" width="200px" height="250px">
-              <img src="./imgs/Nav Bar Colors.png" alt="sample" width="200px" height="30px">
-            </div>
+          <div class="modal-body-right">
+            <img src="./imgs/Map ScreenShot with Popup.png" alt="sample" >
+            <img src="./imgs/Nav Bar Colors.png" alt="sample" width="200px" height="30px">
+          </div>
         </div>
-        <div class="modal-footer">
+        <div class="modal-bottom">
+          <strong>Click Outside Region to Access Webpage</strong>
           <a href="https://ddot.dc.gov/page/dockless-api">Data Source: DC Dockless API</a>
         </div>
       </div>

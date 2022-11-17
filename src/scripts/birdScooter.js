@@ -79,7 +79,7 @@ let addBirdMarker = function(lat,lon,scooter, firstCluster) {
                     `Last Updated: ${Date().slice(0,24)}<br>` +
                     "<b>Charge:<b>"+ ` ${scooter.battery_level}%` + '  ' +
                     batteryIcon(scooter.battery_level) +  '<br>'+
-                    '<a href="https://www.bird.co/bird-access-dc/"' +
+                    '<a href="https://www.bird.co/"' +
                     'target="_blank">Reserve Me</a>'
     birdMarker.bindPopup(birdPopup).openPopup();
     birdMarkerClusters.addLayer(birdMarker);

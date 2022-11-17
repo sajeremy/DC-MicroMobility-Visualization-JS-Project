@@ -79,7 +79,7 @@ let addCapitalMarker = function(lat,lon, firstCluster) {
     let capitalPopup = '<b>Capital Bikeshare</b> <br>' +
                         "<img src='./imgs/capitalBike.png'>" + 
                         `Last Updated: ${Date().slice(0,24)}<br>` +
-                        '<a href="https://capitalbikeshare.com/"' +
+                        '<a href="https://account.lyft.com/findaccount?v=capital-bikeshare"' +
                         'target="_blank">Reserve Me</a>'
     capitalMarker.bindPopup(capitalPopup).openPopup();
 

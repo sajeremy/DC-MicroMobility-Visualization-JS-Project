@@ -111,7 +111,6 @@ window.addEventListener("click",function(event) {
 });
 
 const infoButton = document.getElementById("modalToggle")
-debugger
 
 infoButton.addEventListener("click",function() {
     modalContainer.style.display = "block";

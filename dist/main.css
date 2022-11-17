@@ -8,6 +8,7 @@
   margin-top: 5%;
   margin-left: 5%;
   margin-right: 5%;
+  height: 70%;
   border-radius: 10px;
 }
 
@@ -167,18 +168,17 @@ h1.webTitle {
   display: block;
   position: fixed;
   z-index: 1;
-  padding-top: 150px; /* Location of the box */
+  padding-top: 200px;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
   position: relative;
+  color: #2f455b;
   background-color: #b7cce0;
   margin: auto;
   padding: 0;
@@ -186,43 +186,55 @@ h1.webTitle {
   border-radius: 10px;
   width: 80%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 1s;
-  animation-name: animatetop;
+  animation-name: modalAnimation;
   animation-duration: 0.8s;
 }
 
+@keyframes modalAnimation {
+  from {
+    top: 50px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
 .modal-body {
   display: flex;
   justify-content: space-around;
 }
 
-.modal-left {
+.modal-body-left {
   display: inline-block;
-  overflow: auto;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-.modal-right {
+.modal-body-right {
   display: inline-block;
+  margin-right: 15px;
+  width: 100%;
 }
 
-@-webkit-keyframes animatetop {
-  from {
-    top: 0px;
-    opacity: 0;
-  }
-  to {
-    top: 0px;
-    opacity: 1;
-  }
+.modal-body-right > img {
+  border-radius: 10px;
 }
-@keyframes animatetop {
-  from {
-    top: 0px;
-    opacity: 0;
-  }
-  to {
-    top: 0px;
-    opacity: 1;
-  }
+
+.modal-top {
+  margin-left: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.modal-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative;
+}
+
+h2 + ol {
+  margin-top: -5px;
 }
