@@ -20,29 +20,11 @@ body {
    // background: linear-gradient(0deg, rgba(34,193,195,1) 14%, rgba(253,187,45,1) 100%);
 }
 
-// .leaflet-popup-content-wrapper {
-//    background-color:red;
-//    color: red
-// }
+#Number-Summary {
+   margin-top: 10px;
+   display: flex;
+   justify-content: space-around;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
-// .leaflet-popup-content-wrapper .leaflet-popup-content {
-//    background-color:blue;
-//    color: blue;
-// }
-
-// .leaflet-popup-tip-container {
-//    background-color:green;
-//    color: green;
-// }
-
-
-// :root {
-//    --map-tiles-filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
-// }
-
-// @media (prefers-color-scheme: dark) {
-//    .darkMode {
-//        filter:var(--map-tiles-filter, none);
-//   }
-// }
 

@@ -18,3 +18,6 @@ though is having to navigate through multiple apps if they want to locate bikes 
 - Fetch data from 3 MicroMobility services comapnies (Bird, Helbiz, Capital Bikeshare) through the DC Dockless API
 - View  and scroll map of DC with count of bicycles and e-scooters indicated
 - Learn information of current location based on latest fetch and charge data for Bird scooters
+
+### Highlights
+![Layout Image](./imgs/Commented-Map.png)

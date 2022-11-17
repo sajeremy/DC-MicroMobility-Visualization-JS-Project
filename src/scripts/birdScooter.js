@@ -95,7 +95,7 @@ function bikeNotReserved(idx) {
     return birdData.data.bikes[idx].is_reserved === false;
 };
 function updateNumBirdScooters(availableBikes) {
-    let numBirdScooters = `Currently ${availableBikes} Bird scooters are available`; 
+    let numBirdScooters = `Currently ${availableBikes} Bird Scooters are available`; 
     document.getElementById("birdScooter").innerHTML = numBirdScooters;
 }
 function batteryIcon(batteryLevel) {

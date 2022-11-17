@@ -16,6 +16,13 @@ body {
   background-color: #b7cce0;
 }
 
+#Number-Summary {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -97,7 +104,7 @@ h1.webTitle {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-.topnav {
+.navbar {
   overflow: hidden;
   background-color: #2f455b;
   border-radius: 10px;
@@ -105,13 +112,13 @@ h1.webTitle {
   margin-right: 15px;
 }
 
-.topnav a:first-child,
-.topnav a:nth-child(2),
-.topnav a:nth-child(3) {
+.navbar a:first-child,
+.navbar a:nth-child(2),
+.navbar a:nth-child(3) {
   float: left;
 }
 
-.topnav a {
+.navbar a {
   float: right;
   color: #f2f2f2;
   text-align: center;
@@ -121,7 +128,7 @@ h1.webTitle {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-.topnav a:hover {
+.navbar a:hover {
   background-color: #ddd;
   background-color: #f07a2d;
   color: #333;

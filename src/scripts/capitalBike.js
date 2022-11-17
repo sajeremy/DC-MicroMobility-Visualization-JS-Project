@@ -96,7 +96,7 @@ function bikeNotReserved(idx) {
     return capitalData.data.bikes[idx].is_reserved === 0;
 };
 function updateNumCapitalBikes(availableBikes) {
-    let numCapitalBikes = `Currently ${availableBikes} Capital bikes are available`; 
+    let numCapitalBikes = `Currently ${availableBikes} Capital Bikes are available`; 
     document.getElementById("capitalBike").innerHTML = numCapitalBikes;
 }
 

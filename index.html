@@ -28,7 +28,7 @@
   <body>
     <h1 class="webTitle">DC MicroMobility Visualization</h1>
 
-    <div class="topnav">
+    <div class="navbar">
       <a href="#" id="birdFilter">Bird</a>
       <a href="#" id="helbizFilter">Helbiz</a>
       <a href="#" id="capitalFilter">Capital</a>
@@ -42,9 +42,11 @@
     </div>
 
     <div id="leafletMap"></div>
-    <!-- <p id="capitalBike"></p>
-    <p id="helbizScooter"></p>
-    <p id="birdScooter"></p> -->
+    <div id="Number-Summary">
+      <h4 id="capitalBike"></h4>
+      <h4 id="helbizScooter"></h4>
+      <h4 id="birdScooter"></h4>
+    </div>
 
     <!-- Modal -->
     <div id="microMobilityModal" class="modal">
@@ -76,15 +78,11 @@
           </div>
         </div>
         <div class="modal-bottom">
-          <strong>Click Outside Region to Access Webpage</strong>
+          <strong>Click Anywhere to Enter Page</strong>
           <a href="https://ddot.dc.gov/page/dockless-api">Data Source: DC Dockless API</a>
         </div>
       </div>
     </div>
-
-   
-    
-    <div id="main"></div>
 
   </body>
 

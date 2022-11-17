@@ -6,7 +6,6 @@ import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
 
 //Bike, Scooter APIs with map
-import {map} from './scripts/map'
 import {capitalMarkerArr, getCapitalBike, capitalMarkerClusters} from './scripts/capitalBike'
 import {getHelbizScooter, helbizMarkerArr, helbizMarkerClusters} from './scripts/helbizScooter'
 import {getBirdScooter, birdMarkerArr, birdMarkerClusters} from './scripts/birdScooter'
@@ -100,13 +99,12 @@ birdButton.addEventListener("click",function() {
 const modalContainer = document.getElementById("microMobilityModal")
 const viewMap = document.getElementById("leafletMap")
 
-window.addEventListener("click",function(event) {
-    if (event.target == modalContainer) {
-        modalContainer.style.display = "none";
-        viewMap.style.opacity = "100";
-        console.log("Window was clicked");
-    }
+
+modalContainer.addEventListener("click",function(event) {
+    modalContainer.style.display = "none";
+    viewMap.style.opacity = "100";
 });
+
 
 const infoButton = document.getElementById("modalToggle")
 const modalAppear = document.getElementById("appear")
@@ -123,14 +121,23 @@ infoButton.addEventListener("click",function() {
         opa = opa + inc;
     }
 });
+
+// //Alternate Approach for selecting outside of modal
+// window.addEventListener("click",function(event) {
+//     if (event.target == modalContainer) {
+//         modalContainer.style.display = "none";
+//         viewMap.style.opacity = "100";
+//         console.log("Window was clicked");
+//     }
+// });
 // console.log(map.getBounds()._northEast.lat);
 // console.log(map.getBounds()._northEast.lng);
 // console.log(map.getBounds()._southWest.lat);
 // console.log(map.getBounds()._southWest.lng);
 
-viewMap.addEventListener("drag",function(event) {
-    console.log("map was clicked")
-});
+// viewMap.addEventListener("drag",function(event) {
+//     console.log("map was clicked")
+// });
 
 // const allButton = document.getElementById("allFilter")
 // allButton.addEventListener("click",function() {
@@ -140,16 +147,7 @@ viewMap.addEventListener("drag",function(event) {
 //     getBirdScooter();
 // });
 
-// map;
-// addTiles;
 
-
-// import Example from "./scripts/example";
-
-// document.addEventListener("DOMContentLoaded", () => {
-//     const main = document.getElementById("main");
-//     new Example(main);
-// });
 
 
 
