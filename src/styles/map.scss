@@ -26,6 +26,19 @@ body {
    justify-content: space-around;
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    color: #2f455b;
+   position: relative;
 }
 
+// div #Capital-Date-Number,
+// div #Bird-Date-Number,
+// div #Helbiz-Date-Number {
+//    background-color: whitesmoke;
+//    border-radius: 5px;
+// }
+
+div > h4 {
+   margin-left: 5px;
+   margin-right: 5px;
+   text-align: center;
+}
 
