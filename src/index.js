@@ -109,10 +109,19 @@ window.addEventListener("click",function(event) {
 });
 
 const infoButton = document.getElementById("modalToggle")
-
+const modalAppear = document.getElementById("appear")
 infoButton.addEventListener("click",function() {
     modalContainer.style.display = "block";
     viewMap.style.opacity = "0";
+    let opa = 0;
+    const inc = .05;
+    while (opa < 1) {
+        setInterval(function appear() {
+            opa = opa + inc;
+            modalAppear.style.opacity = opa;
+        }, .1)
+        opa = opa + inc;
+    }
 });
 // console.log(map.getBounds()._northEast.lat);
 // console.log(map.getBounds()._northEast.lng);

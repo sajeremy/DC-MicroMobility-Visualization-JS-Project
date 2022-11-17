@@ -186,20 +186,9 @@ h1.webTitle {
   border-radius: 10px;
   width: 80%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  animation-name: modalAnimation;
-  animation-duration: 0.8s;
+  opacity: 1;
 }
 
-@keyframes modalAnimation {
-  from {
-    top: 50px;
-    opacity: 0;
-  }
-  to {
-    top: 0px;
-    opacity: 1;
-  }
-}
 .modal-body {
   display: flex;
   justify-content: space-around;
