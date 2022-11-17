@@ -93,9 +93,7 @@ birdButton.addEventListener("click",function() {
         // }
         // let idx = buttonArr.findIndex(el => el === "bird");
         // buttonArr.splice(idx,1);
-
     }
-
 });
 
 //Close Modal when Clicking outside of Modal Region
