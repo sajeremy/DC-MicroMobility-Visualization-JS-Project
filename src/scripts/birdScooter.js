@@ -76,7 +76,7 @@ let addBirdMarker = function(lat,lon,scooter, firstCluster) {
     let birdMarker = L.marker([lat,lon], {icon: birdScooterIcon})
     let birdPopup = '<b>Bird</b> <br>' + 
                     "<img src='./imgs/birdScooter.png' width='100px'>" +
-                    `Last Updated: ${Date().slice(0,24)}<br>` +
+                    `<b>Last Updated:</b><br> ${Date().slice(0,24)}<br>` +
                     "<b>Charge:<b>"+ ` ${scooter.battery_level}%` + '  ' +
                     batteryIcon(scooter.battery_level) +  '<br>'+
                     '<a href="https://www.bird.co/"' +

@@ -78,9 +78,9 @@ let addCapitalMarker = function(lat,lon, firstCluster) {
     let capitalMarker = L.marker([lat,lon], {icon: capitalBikeIcon})
     let capitalPopup = '<b>Capital Bikeshare</b> <br>' +
                         "<img src='./imgs/capitalBike.png'>" + 
-                        `Last Updated: ${Date().slice(0,24)}<br>` +
-                        '<a href="https://account.lyft.com/findaccount?v=capital-bikeshare"' +
-                        'target="_blank">Reserve Me</a>'
+                        `<b>Last Updated:</b><br> ${Date().slice(0,24)}<br>` +
+                        '<b><a href="https://account.lyft.com/findaccount?v=capital-bikeshare"' +
+                        'target="_blank">Reserve Me</a></b>'
     capitalMarker.bindPopup(capitalPopup).openPopup();
 
     // capitalMarker.addTo(map)
