@@ -30,6 +30,9 @@ helbizButton.addEventListener("click",function() {
         let idx = buttonArr.findIndex(el => el === "helbiz");
         buttonArr.splice(idx,1);
 
+        document.getElementById("helbizDate").innerHTML = ""; 
+        document.getElementById("helbizScooter").innerHTML = "";
+
         // // // **Alternative Approach using DOM Manipulation**
         // document.getElementById('helbizFilter').className = "noFilter"
         // document.getElementById('capitalFilter').className = "noFilter"
@@ -56,6 +59,9 @@ capitalButton.addEventListener("click",function() {
         document.getElementById('capitalFilter').className = "noFilter"
         let idx = buttonArr.findIndex(el => el === "capital");
         buttonArr.splice(idx,1);
+
+        document.getElementById("capitalDate").innerHTML = ""; 
+        document.getElementById("capitalBike").innerHTML = "";
     
         // // // **Alternative Approach using DOM Manipulation**
         // document.getElementById('helbizFilter').className = "noFilter"
@@ -82,6 +88,9 @@ birdButton.addEventListener("click",function() {
         document.getElementById('birdFilter').className = "noFilter"
         let idx = buttonArr.findIndex(el => el === "bird");
         buttonArr.splice(idx,1);
+
+        document.getElementById("birdDate").innerHTML = ""; 
+        document.getElementById("birdScooter").innerHTML = "";
 
         // // // **Alternative Approach using DOM Manipulation**
         // document.getElementById('helbizFilter').className = "noFilter"

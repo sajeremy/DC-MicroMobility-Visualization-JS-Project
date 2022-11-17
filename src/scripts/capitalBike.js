@@ -97,6 +97,7 @@ function bikeNotReserved(idx) {
 };
 function updateNumCapitalBikes(availableBikes) {
     let numCapitalBikes = `Currently ${availableBikes} Capital Bikes are available`; 
+    document.getElementById("capitalDate").innerHTML = `Capital Last Updated: ${Date().slice(0,24)}`;
     document.getElementById("capitalBike").innerHTML = numCapitalBikes;
 }
 

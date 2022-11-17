@@ -102,7 +102,8 @@ function bikeNotReserved(idx) {
     return helbizData.data.bikes[idx].is_reserved === 0;
 };
 function updateNumHelbizScooters(availableBikes) {
-    let numHelbizScooters = `Currently ${availableBikes} Helbiz Scooters are available`; 
+    let numHelbizScooters = `Currently ${availableBikes} Helbiz Scooters are available`;
+    document.getElementById("helbizDate").innerHTML = `Helbiz Last Updated: ${Date().slice(0,24)}`; 
     document.getElementById("helbizScooter").innerHTML = numHelbizScooters;
 }
 
