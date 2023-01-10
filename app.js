@@ -1,13 +1,18 @@
-// const express = require("express"); // web framework
+const express = require("express"); // web framework
 // const fetch = require("node-fetch"); // for making AJAX requests
-// const path = require("path");
-import * as dotenv from "dotenv";
-dotenv.config();
-import ck from "ckey";
+const fetch = (...args) =>
+  import("node-fetch").then(({ default: fetch }) => fetch(...args));
+const path = require("path");
+const ck = require("ckey");
 
-import express from "express";
-import fetch from "node-fetch";
-import path from "path";
+// //"type": "module", Enables ES6 modules
+// import * as dotenv from "dotenv";
+// dotenv.config();
+// import ck from "ckey";
+
+// import express from "express";
+// import fetch from "node-fetch";
+// import path from "path";
 
 // put environmental variables defined in .env file on process.env
 // require("dotenv").config();

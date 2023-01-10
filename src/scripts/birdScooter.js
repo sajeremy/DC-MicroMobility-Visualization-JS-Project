@@ -15,13 +15,44 @@ let lon;
 let birdMarkerArr;
 let firstCluster = 0;
 
-//Fetch data from Bird Scooter API
-export async function getBirdScooter() {
-  const response = await fetch(birdScooterURL);
-  birdData = await response.json();
+// //Fetch data from Bird Scooter API
+// export async function getBirdScooter() {
+//   const response = await fetch(birdScooterURL);
+//   birdData = await response.json();
 
-  console.log("This is Bird Scooter Data");
-  console.log(birdData);
+//   console.log("This is Bird Scooter Data");
+//   console.log(birdData);
+//   const birdScooterArr = birdData.data.bikes;
+
+//   let numBikes = birdScooterArr.length;
+//   let availableBikes = 0;
+//   birdMarkerArr = [];
+
+//   // Create markers for bikes not disabled or reserved
+//   for (let i = 0; i < numBikes; i++) {
+//     if (bikeNotDisabeled(i) || bikeNotReserved(i)) {
+//       lat = birdScooterArr[i].lat;
+//       lon = birdScooterArr[i].lon;
+//       birdMarkerArr.push(
+//         addBirdMarker(lat, lon, birdScooterArr[i], firstCluster)
+//       );
+//       availableBikes += 1;
+//       // addBirdMarker(lat, lon, birdScooterArr[i]);
+//     }
+//   }
+//   map.addLayer(birdMarkerClusters);
+//   updateNumBirdScooters(availableBikes);
+// }
+
+//Fetch DC API bird data with backend
+export const getBirdScooter = (url = birdScooterURL) => {
+  fetch(`/cors?url=${encodeURIComponent(url)}`)
+    .then((res) => res.json())
+    .then((birdData) => {
+      console.log("This is Bird Scooter Data");
+      console.log(birdData);
+    });
+
   const birdScooterArr = birdData.data.bikes;
 
   let numBikes = birdScooterArr.length;
@@ -42,7 +73,7 @@ export async function getBirdScooter() {
   }
   map.addLayer(birdMarkerClusters);
   updateNumBirdScooters(availableBikes);
-}
+};
 
 //Bird Scooter Icon Image
 let birdScooterIcon = L.icon({

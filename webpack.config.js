@@ -1,20 +1,26 @@
-const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+// //ES6 module syntax
+// import path from "path";
+// import MiniCssExtractPlugin from "mini-css-extract-plugin";
+
+const path = require("path");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const config = {
   entry: [
-    path.resolve(__dirname, 'src', 'index.js'),
-    path.resolve(__dirname, 'src', 'index.scss')
+    path.resolve(__dirname, "src", "index.js"),
+    path.resolve(__dirname, "src", "index.scss"),
   ],
   output: {
-    path: path.join(__dirname, 'dist'), // bundled file in dist/
-    filename: '[name].js'
+    path: path.join(__dirname, "dist"), // bundled file in dist
+    // publicPath: "dist/", //testing updating js scripts
+    filename: "[name].js",
+    // filename: "test.js",
   },
   module: {
     rules: [
       {
         test: /\.js$/, // applies to js files
-        use: ['babel-loader'], // transpiles your js
+        use: ["babel-loader"], // transpiles your js
         exclude: /node_modules/, // don't transpile node modules
       },
       {
@@ -22,23 +28,23 @@ const config = {
         use: [
           MiniCssExtractPlugin.loader, // create bundled css file
           {
-            loader: 'css-loader', // resolves @import statements
-            options: { url: false } // don't resolve url() statements
+            loader: "css-loader", // resolves @import statements
+            options: { url: false }, // don't resolve url() statements
           },
-          'sass-loader', // compiles sass to css
-        ]
-      }
-    ]
+          "sass-loader", // compiles sass to css
+        ],
+      },
+    ],
   },
-  plugins: [new MiniCssExtractPlugin()]
+  plugins: [new MiniCssExtractPlugin()],
 };
 
 module.exports = (env, argv) => {
-  if (argv.mode === 'production') {
-    config.devtool = 'source-map';
+  if (argv.mode === "production") {
+    config.devtool = "source-map";
   } else {
-    config.devtool = 'eval-source-map';
+    config.devtool = "eval-source-map";
   }
 
   return config;
-}
+};
