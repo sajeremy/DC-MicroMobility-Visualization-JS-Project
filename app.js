@@ -1,6 +1,10 @@
 // const express = require("express"); // web framework
 // const fetch = require("node-fetch"); // for making AJAX requests
 // const path = require("path");
+import * as dotenv from "dotenv";
+dotenv.config();
+import ck from "ckey";
+
 import express from "express";
 import fetch from "node-fetch";
 import path from "path";
