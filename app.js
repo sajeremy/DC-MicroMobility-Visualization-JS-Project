@@ -1,9 +1,12 @@
-const express = require("express"); // web framework
-const fetch = require("node-fetch"); // for making AJAX requests
-const path = require("path");
+// const express = require("express"); // web framework
+// const fetch = require("node-fetch"); // for making AJAX requests
+// const path = require("path");
+import express from "express";
+import fetch from "node-fetch";
+import path from "path";
 
 // put environmental variables defined in .env file on process.env
-require("dotenv").config();
+// require("dotenv").config();
 
 const app = express();
 
