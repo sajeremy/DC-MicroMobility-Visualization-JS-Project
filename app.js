@@ -15,7 +15,7 @@ const ck = require("ckey");
 // import path from "path";
 
 // put environmental variables defined in .env file on process.env
-// require("dotenv").config();
+require("dotenv").config();
 
 const app = express();
 

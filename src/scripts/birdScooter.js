@@ -5,6 +5,7 @@ import "@fortawesome/fontawesome-free/js/regular";
 import "@fortawesome/fontawesome-free/js/brands";
 
 import { map } from "./map";
+// import { debug } from "webpack";
 
 //Declare Constants and Variables
 // const birdScooterURL = "https://cryptic-beyond-07137.herokuapp.com/https://gbfs.bird.co/dc"
@@ -44,14 +45,44 @@ let firstCluster = 0;
 //   updateNumBirdScooters(availableBikes);
 // }
 
-//Fetch DC API bird data with backend
-export const getBirdScooter = (url = birdScooterURL) => {
-  fetch(`/cors?url=${encodeURIComponent(url)}`)
-    .then((res) => res.json())
-    .then((birdData) => {
-      console.log("This is Bird Scooter Data");
-      console.log(birdData);
-    });
+// //Fetch DC API bird data with backend
+// export const getBirdScooter = (url = birdScooterURL) => {
+//   fetch(`/cors?url=${encodeURIComponent(url)}`)
+//     .then((res) => res.json())
+//     .then((birdData) => {
+//       console.log("This is Bird Scooter Data");
+//       console.log(birdData);
+//       console.log(birdData.data.bikes);
+//     });
+//   const birdScooterArr = birdData.data.bikes;
+
+//   let numBikes = birdScooterArr.length;
+//   let availableBikes = 0;
+//   birdMarkerArr = [];
+
+//   // Create markers for bikes not disabled or reserved
+//   for (let i = 0; i < numBikes; i++) {
+//     if (bikeNotDisabeled(i) || bikeNotReserved(i)) {
+//       lat = birdScooterArr[i].lat;
+//       lon = birdScooterArr[i].lon;
+//       birdMarkerArr.push(
+//         addBirdMarker(lat, lon, birdScooterArr[i], firstCluster)
+//       );
+//       availableBikes += 1;
+//       // addBirdMarker(lat, lon, birdScooterArr[i]);
+//     }
+//   }
+//   map.addLayer(birdMarkerClusters);
+//   updateNumBirdScooters(availableBikes);
+// };
+
+//Fetch DC API data with ES6 syntax
+export async function getBirdScooter(url = birdScooterURL) {
+  const response = await fetch(`/cors?url=${encodeURIComponent(url)}`);
+  birdData = await response.json();
+  console.log("This is Bird Scooter Data");
+  console.log(birdData);
+  console.log(birdData.data.bikes);
 
   const birdScooterArr = birdData.data.bikes;
 
@@ -73,7 +104,7 @@ export const getBirdScooter = (url = birdScooterURL) => {
   }
   map.addLayer(birdMarkerClusters);
   updateNumBirdScooters(availableBikes);
-};
+}
 
 //Bird Scooter Icon Image
 let birdScooterIcon = L.icon({

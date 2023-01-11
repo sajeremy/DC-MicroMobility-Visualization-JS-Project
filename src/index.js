@@ -146,23 +146,23 @@ infoButton.addEventListener("click", function () {
 //     }
 // });
 
-const leafletMap = document.getElementById("leafletMap");
-leafletMap.addEventListener("scroll", function (event) {
-  console.log(map.getBounds()._northEast.lat);
-  console.log(map.getBounds()._northEast.lng);
-  console.log(map.getBounds()._southWest.lat);
-  console.log(map.getBounds()._southWest.lng);
-});
+// const leafletMap = document.getElementById("leafletMap");
+// leafletMap.addEventListener("scroll", function (event) {
+//   console.log(map.getBounds()._northEast.lat);
+//   console.log(map.getBounds()._northEast.lng);
+//   console.log(map.getBounds()._southWest.lat);
+//   console.log(map.getBounds()._southWest.lng);
+// });
 
-let scrollArr = [];
-leafletMap.addEventListener("wheel", () => {
-  scrollArr.push(2);
-  // debugger
-  while (scrollArr.length !== 0) {
-    setTimeout(scrollArr.pop(), 1000);
-    console.log(scrollArr);
-  }
-});
+// let scrollArr = [];
+// leafletMap.addEventListener("wheel", () => {
+//   scrollArr.push(2);
+//   // debugger
+//   while (scrollArr.length !== 0) {
+//     setTimeout(scrollArr.pop(), 1000);
+//     console.log(scrollArr);
+//   }
+// });
 
 // viewMap.addEventListener("drag",function(event) {
 //     console.log("map was clicked")
