@@ -78,11 +78,19 @@ let firstCluster = 0;
 
 //Fetch DC API data with ES6 syntax
 export async function getBirdScooter(url = birdScooterURL) {
+  const authResponse = await fetch(`/auth`);
+  const accessToken = await authResponse.json();
+
+  const birdResponse = await fetch(
+    `/bird?auth=${encodeURIComponent(accessToken)}`
+  );
+  const test = await birdResponse.json();
+  console.log(`This is the result of the test: ${test}`);
+
   const response = await fetch(`/cors?url=${encodeURIComponent(url)}`);
   birdData = await response.json();
   console.log("This is Bird Scooter Data");
   console.log(birdData);
-  console.log(birdData.data.bikes);
 
   const birdScooterArr = birdData.data.bikes;
 
