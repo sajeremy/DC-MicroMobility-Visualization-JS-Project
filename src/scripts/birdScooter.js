@@ -85,7 +85,8 @@ export async function getBirdScooter(url = birdScooterURL) {
     `/bird?auth=${encodeURIComponent(accessToken)}`
   );
   const test = await birdResponse.json();
-  console.log(`This is the result of the test: ${test}`);
+  console.log(`This is the result of the test:`);
+  console.log(test);
 
   const response = await fetch(`/cors?url=${encodeURIComponent(url)}`);
   birdData = await response.json();
