@@ -69,7 +69,7 @@ app.get("/auth", async (req, res) => {
 app.get("/bird", async (req, res) => {
   const lat = 38.9072;
   const lon = -77.0369;
-  const radius = 5500; //in meters
+  const radius = 5250; //in meters
 
   const birdHeaders = {
     Authorization: `Bearer ${req.query.auth}`,
@@ -79,7 +79,7 @@ app.get("/bird", async (req, res) => {
     "Device-Id": process.env.GUID,
     Platform: "ios",
     "App-Version": "4.119.0",
-    Location: JSON.stringify({"latitude":lat,"longitude":lon,"altitude":500,"accuracy":65,"speed":-1,"heading":-1})
+    Location: JSON.stringify({"latitude":lat,"longitude":lon,"altitude":500,"accuracy":90,"speed":-1,"heading":-1})
   };
 
   const birdAppURL = `https://api-bird.prod.birdapp.com/bird/nearby?latitude=${lat}&longitude=${lon}&radius=${radius}`;
