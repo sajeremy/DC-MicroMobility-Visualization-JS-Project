@@ -10,7 +10,7 @@ import { map } from "./map";
 //Declare Constants and Variables
 // const birdScooterURL = "https://cryptic-beyond-07137.herokuapp.com/https://gbfs.bird.co/dc"
 const birdScooterURL = "https://gbfs.bird.co/dc";
-let birdData;
+// let birdData;
 let lat;
 let lon;
 let birdMarkerArr;
@@ -84,16 +84,15 @@ export async function getBirdScooter(url = birdScooterURL) {
   const birdResponse = await fetch(
     `/bird?auth=${encodeURIComponent(accessToken)}`
   );
-  const test = await birdResponse.json();
-  console.log(`This is the result of the test:`);
-  console.log(test);
+  const birdData = await birdResponse.json();
+  console.log(birdData.birds);
 
-  const response = await fetch(`/cors?url=${encodeURIComponent(url)}`);
-  birdData = await response.json();
-  console.log("This is Bird Scooter Data");
-  console.log(birdData);
+  // const response = await fetch(`/cors?url=${encodeURIComponent(url)}`);
+  // birdData = await response.json();
+  // console.log("This is Bird Scooter Data");
+  // console.log(birdData);
 
-  const birdScooterArr = birdData.data.bikes;
+  const birdScooterArr = birdData.birds;
 
   let numBikes = birdScooterArr.length;
   let availableBikes = 0;
@@ -101,15 +100,15 @@ export async function getBirdScooter(url = birdScooterURL) {
 
   // Create markers for bikes not disabled or reserved
   for (let i = 0; i < numBikes; i++) {
-    if (bikeNotDisabeled(i) || bikeNotReserved(i)) {
-      lat = birdScooterArr[i].lat;
-      lon = birdScooterArr[i].lon;
+    // if (bikeNotDisabeled(i) || bikeNotReserved(i)) {
+      lat = birdScooterArr[i].location.latitude;
+      lon = birdScooterArr[i].location.longitude;
       birdMarkerArr.push(
         addBirdMarker(lat, lon, birdScooterArr[i], firstCluster)
       );
       availableBikes += 1;
       // addBirdMarker(lat, lon, birdScooterArr[i]);
-    }
+    // }
   }
   map.addLayer(birdMarkerClusters);
   updateNumBirdScooters(availableBikes);
@@ -169,12 +168,12 @@ let addBirdMarker = function (lat, lon, scooter, firstCluster) {
 };
 
 //Bird Scooter Async Function Helpers
-function bikeNotDisabeled(idx) {
-  return birdData.data.bikes[idx].is_disabled === false;
-}
-function bikeNotReserved(idx) {
-  return birdData.data.bikes[idx].is_reserved === false;
-}
+// function bikeNotDisabeled(idx) {
+//   return birdData.data.bikes[idx].is_disabled === false;
+// }
+// function bikeNotReserved(idx) {
+//   return birdData.data.bikes[idx].is_reserved === false;
+// }
 function updateNumBirdScooters(availableBikes) {
   let numBirdScooters = `Currently ${availableBikes} scooters are available`;
   document.getElementById(

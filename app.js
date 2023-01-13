@@ -69,7 +69,7 @@ app.get("/auth", async (req, res) => {
 app.get("/bird", async (req, res) => {
   const lat = 38.9072;
   const lon = -77.0369;
-  const radius = 10000; //in meters
+  const radius = 5500; //in meters
 
   const birdHeaders = {
     Authorization: `Bearer ${req.query.auth}`,
