@@ -101,13 +101,13 @@ export async function getBirdScooter(url = birdScooterURL) {
   // Create markers for bikes not disabled or reserved
   for (let i = 0; i < numBikes; i++) {
     // if (bikeNotDisabeled(i) || bikeNotReserved(i)) {
-      lat = birdScooterArr[i].location.latitude;
-      lon = birdScooterArr[i].location.longitude;
-      birdMarkerArr.push(
-        addBirdMarker(lat, lon, birdScooterArr[i], firstCluster)
-      );
-      availableBikes += 1;
-      // addBirdMarker(lat, lon, birdScooterArr[i]);
+    lat = birdScooterArr[i].location.latitude;
+    lon = birdScooterArr[i].location.longitude;
+    birdMarkerArr.push(
+      addBirdMarker(lat, lon, birdScooterArr[i], firstCluster)
+    );
+    availableBikes += 1;
+    // addBirdMarker(lat, lon, birdScooterArr[i]);
     // }
   }
   map.addLayer(birdMarkerClusters);
@@ -153,7 +153,7 @@ let addBirdMarker = function (lat, lon, scooter, firstCluster) {
   let birdPopup =
     "<b>Bird</b> <br>" +
     "<img src='./imgs/birdScooter.png' width='100px'>" +
-    `<b>Last Updated:</b><br> ${Date().slice(0, 24)}<br>` +
+    `<b>Last Updated:</b><br> ${birdFetchDate}<br>` +
     "<b>Charge:<b>" +
     ` ${scooter.battery_level}%` +
     "  " +
@@ -174,12 +174,22 @@ let addBirdMarker = function (lat, lon, scooter, firstCluster) {
 // function bikeNotReserved(idx) {
 //   return birdData.data.bikes[idx].is_reserved === false;
 // }
+let birdFetchDate = new Date().toLocaleString("en-US", {
+  weekday: "short",
+  month: "short",
+  day: "numeric",
+  hour: "numeric",
+  minute: "numeric",
+  hour12: true,
+});
+
 function updateNumBirdScooters(availableBikes) {
-  let numBirdScooters = `Currently ${availableBikes} scooters are available`;
+  let numBirdScooters = `Currently <span>${availableBikes}</span> scooters are available`;
   document.getElementById(
     "birdDate"
-  ).innerHTML = `Bird Last Updated: ${Date().slice(0, 24)}`;
+  ).innerHTML = `Last Updated: <span>${birdFetchDate}</span>`;
   document.getElementById("birdScooter").innerHTML = numBirdScooters;
+  document.getElementById("bird-title").innerHTML = "Bird";
 }
 function batteryIcon(batteryLevel) {
   let result;

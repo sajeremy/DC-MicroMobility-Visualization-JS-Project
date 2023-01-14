@@ -23,22 +23,35 @@ body {
 #Number-Summary {
    margin-top: 10px;
    display: flex;
+   flex-direction: row;
    justify-content: space-around;
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    color: #2f455b;
    position: relative;
+   margin-left: 5vw;
+   margin-right: 5vw;
 }
 
-// div #Capital-Date-Number,
-// div #Bird-Date-Number,
-// div #Helbiz-Date-Number {
-//    background-color: whitesmoke;
-//    border-radius: 5px;
-// }
+.bird-info-container,
+.helbiz-info-container,
+.capital-info-container {
+   width: 33.33%;
+}
 
-div > h4 {
+p#birdDate > span, p#birdScooter > span,
+p#helbizDate > span, p#helbizScooter > span,
+p#capitalDate > span, p#capitalBike > span {
+   font-weight: 800;
+}
+
+div > p,
+div > #bird-title,
+div > #helbiz-title,
+div > #capital-title {
    margin-left: 5px;
    margin-right: 5px;
    text-align: center;
 }
+
+
 

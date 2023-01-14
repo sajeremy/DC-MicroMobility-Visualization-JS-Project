@@ -43,6 +43,7 @@ helbizButton.addEventListener("click", function () {
     let idx = buttonArr.findIndex((el) => el === "helbiz");
     buttonArr.splice(idx, 1);
 
+    document.getElementById("helbiz-title").innerHTML = "";
     document.getElementById("helbizDate").innerHTML = "";
     document.getElementById("helbizScooter").innerHTML = "";
 
@@ -70,6 +71,7 @@ capitalButton.addEventListener("click", function () {
     let idx = buttonArr.findIndex((el) => el === "capital");
     buttonArr.splice(idx, 1);
 
+    document.getElementById("capital-title").innerHTML = "";
     document.getElementById("capitalDate").innerHTML = "";
     document.getElementById("capitalBike").innerHTML = "";
 
@@ -97,6 +99,7 @@ birdButton.addEventListener("click", function () {
     let idx = buttonArr.findIndex((el) => el === "bird");
     buttonArr.splice(idx, 1);
 
+    document.getElementById("bird-title").innerHTML = "";
     document.getElementById("birdDate").innerHTML = "";
     document.getElementById("birdScooter").innerHTML = "";
 
