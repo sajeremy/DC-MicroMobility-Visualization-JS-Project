@@ -15,8 +15,8 @@ export async function getHelbizScooter() {
   const response = await fetch(helbizScooterURL);
   helbizData = await response.json();
 
-  console.log("This is Helbiz Scooter Data");
-  console.log(helbizData);
+  // console.log("This is Helbiz Scooter Data");
+  // console.log(helbizData);
   const helbizScooterArr = helbizData.data.bikes;
 
   let numBikes = helbizScooterArr.length;

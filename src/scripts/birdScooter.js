@@ -16,35 +16,6 @@ let lon;
 let birdMarkerArr;
 let firstCluster = 0;
 
-// //Fetch data from Bird Scooter API
-// export async function getBirdScooter() {
-//   const response = await fetch(birdScooterURL);
-//   birdData = await response.json();
-
-//   console.log("This is Bird Scooter Data");
-//   console.log(birdData);
-//   const birdScooterArr = birdData.data.bikes;
-
-//   let numBikes = birdScooterArr.length;
-//   let availableBikes = 0;
-//   birdMarkerArr = [];
-
-//   // Create markers for bikes not disabled or reserved
-//   for (let i = 0; i < numBikes; i++) {
-//     if (bikeNotDisabeled(i) || bikeNotReserved(i)) {
-//       lat = birdScooterArr[i].lat;
-//       lon = birdScooterArr[i].lon;
-//       birdMarkerArr.push(
-//         addBirdMarker(lat, lon, birdScooterArr[i], firstCluster)
-//       );
-//       availableBikes += 1;
-//       // addBirdMarker(lat, lon, birdScooterArr[i]);
-//     }
-//   }
-//   map.addLayer(birdMarkerClusters);
-//   updateNumBirdScooters(availableBikes);
-// }
-
 // //Fetch DC API bird data with backend
 // export const getBirdScooter = (url = birdScooterURL) => {
 //   fetch(`/cors?url=${encodeURIComponent(url)}`)
@@ -79,21 +50,34 @@ let firstCluster = 0;
 //Fetch DC API data with ES6 syntax
 export async function getBirdScooter(url = birdScooterURL) {
   const loadingModal = document.getElementById("loading-microMobilityModal");
-  const authResponse = await fetch(`/auth`);
-  const accessToken = await authResponse.json();
+  let birdAPI = true;
+  let birdResponse;
+  let birdData;
+  let birdScooterArr;
 
-  const birdResponse = await fetch(
-    `/bird?auth=${encodeURIComponent(accessToken)}`
-  );
-  const birdData = await birdResponse.json();
-  console.log(birdData.birds);
+  //Error handling utilizing backup API in case first does not fetch data
+  try {
+    const authResponse = await fetch(`/auth`);
+    const accessToken = await authResponse.json();
+    birdResponse = await fetch(`/bird?auth=${encodeURIComponent(accessToken)}`);
+    birdData = await birdResponse.json();
+    birdScooterArr = birdData.birds;
+  } catch {
+    birdAPI = false;
+    birdResponse = await fetch(`/cors?url=${encodeURIComponent(url)}`);
 
-  // const response = await fetch(`/cors?url=${encodeURIComponent(url)}`);
-  // birdData = await response.json();
-  // console.log("This is Bird Scooter Data");
-  // console.log(birdData);
-
-  const birdScooterArr = birdData.birds;
+    try {
+      birdData = await birdResponse.json();
+      birdScooterArr = birdData.data.bikes;
+    } catch {
+      loadingModal.style.display = "none";
+      document.getElementById("birdFilter").className = "noFilter";
+      alert(
+        "Apologies, experiencing difficulties fetching data.  Please try again later."
+      );
+      return null;
+    }
+  }
 
   let numBikes = birdScooterArr.length;
   let availableBikes = 0;
@@ -101,15 +85,14 @@ export async function getBirdScooter(url = birdScooterURL) {
 
   // Create markers for bikes not disabled or reserved
   for (let i = 0; i < numBikes; i++) {
-    // if (bikeNotDisabeled(i) || bikeNotReserved(i)) {
-    lat = birdScooterArr[i].location.latitude;
-    lon = birdScooterArr[i].location.longitude;
+    lat = birdAPI ? birdScooterArr[i].location.latitude : birdScooterArr[i].lat;
+    lon = birdAPI
+      ? birdScooterArr[i].location.longitude
+      : birdScooterArr[i].lon;
     birdMarkerArr.push(
       addBirdMarker(lat, lon, birdScooterArr[i], firstCluster)
     );
     availableBikes += 1;
-    // addBirdMarker(lat, lon, birdScooterArr[i]);
-    // }
   }
   map.addLayer(birdMarkerClusters);
   updateNumBirdScooters(availableBikes);
@@ -170,12 +153,6 @@ let addBirdMarker = function (lat, lon, scooter, firstCluster) {
 };
 
 //Bird Scooter Async Function Helpers
-// function bikeNotDisabeled(idx) {
-//   return birdData.data.bikes[idx].is_disabled === false;
-// }
-// function bikeNotReserved(idx) {
-//   return birdData.data.bikes[idx].is_reserved === false;
-// }
 let birdFetchDate = new Date().toLocaleString("en-US", {
   weekday: "short",
   month: "short",

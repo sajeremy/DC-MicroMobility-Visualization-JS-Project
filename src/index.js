@@ -92,12 +92,18 @@ capitalButton.addEventListener("click", function () {
 });
 
 const birdButton = document.getElementById("birdFilter");
-birdButton.addEventListener("click", function () {
+birdButton.addEventListener("click", async function () {
   if (!buttonArr.includes("bird")) {
     loadingModal.style.display = "block";
     buttonArr.push("bird");
-    document.getElementById("birdFilter").className = "greenFilter";
-    getBirdScooter();
+    let birdFilter = document.getElementById("birdFilter");
+    birdFilter.className = "greenFilter";
+    const result = await getBirdScooter();
+
+    if (result === null) {
+      let idx = buttonArr.findIndex((el) => el === "bird");
+      buttonArr.splice(idx, 1);
+    }
   } else {
     birdMarkerClusters.removeLayers(birdMarkerArr);
     document.getElementById("birdFilter").className = "noFilter";
@@ -123,17 +129,33 @@ birdButton.addEventListener("click", function () {
 //Close Modal when Clicking outside of Modal Region
 const modalContainer = document.getElementById("microMobilityModal");
 const viewMap = document.getElementById("leafletMap");
+const birdDateNum = document.getElementById("Bird-Date-Number")
+  ? document.getElementById("Bird-Date-Number")
+  : null;
+const helbizDateNum = document.getElementById("Helbiz-Date-Number")
+  ? document.getElementById("Helbiz-Date-Number")
+  : null;
+const capitalDateNum = document.getElementById("Capital-Date-Number")
+  ? document.getElementById("Capital-Date-Number")
+  : null;
 
 modalContainer.addEventListener("click", function (event) {
   modalContainer.style.display = "none";
   viewMap.style.opacity = "100";
+  birdDateNum ? (birdDateNum.style.color = "#2f455b") : null;
+  helbizDateNum ? (helbizDateNum.style.color = "#2f455b") : null;
+  capitalDateNum ? (capitalDateNum.style.color = "#2f455b") : null;
 });
 
 const infoButton = document.getElementById("modalToggle");
 const modalAppear = document.getElementById("appear");
+
 infoButton.addEventListener("click", function () {
   modalContainer.style.display = "block";
   viewMap.style.opacity = "0";
+  birdDateNum ? (birdDateNum.style.color = "#b7cce0") : null;
+  helbizDateNum ? (helbizDateNum.style.color = "#b7cce0") : null;
+  capitalDateNum ? (capitalDateNum.style.color = "#b7cce0") : null;
   let opa = 0;
   const inc = 0.05;
   while (opa < 1) {
@@ -152,34 +174,4 @@ infoButton.addEventListener("click", function () {
 //         viewMap.style.opacity = "100";
 //         console.log("Window was clicked");
 //     }
-// });
-
-// const leafletMap = document.getElementById("leafletMap");
-// leafletMap.addEventListener("scroll", function (event) {
-//   console.log(map.getBounds()._northEast.lat);
-//   console.log(map.getBounds()._northEast.lng);
-//   console.log(map.getBounds()._southWest.lat);
-//   console.log(map.getBounds()._southWest.lng);
-// });
-
-// let scrollArr = [];
-// leafletMap.addEventListener("wheel", () => {
-//   scrollArr.push(2);
-//   // debugger
-//   while (scrollArr.length !== 0) {
-//     setTimeout(scrollArr.pop(), 1000);
-//     console.log(scrollArr);
-//   }
-// });
-
-// viewMap.addEventListener("drag",function(event) {
-//     console.log("map was clicked")
-// });
-
-// const allButton = document.getElementById("allFilter")
-// allButton.addEventListener("click",function() {
-
-//     getCapitalBike();
-//     getHelbizScooter();
-//     getBirdScooter();
 // });

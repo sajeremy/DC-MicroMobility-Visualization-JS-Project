@@ -34,7 +34,7 @@ app.get("/test/", (request, response) => {
 // `request` object contains request's query string, wildcard params, etc
 // `response` object has `send` method for sending our server response
 app.get("/cors", (request, response) => {
-  console.log(`Fetching: ${request.query.url}`);
+  // console.log(`Fetching: ${request.query.url}`);
 
   fetch(request.query.url) // AJAX request to URL provided in query string
     .then((apiResponse) => apiResponse.json()) // parse response as JSON
@@ -79,7 +79,14 @@ app.get("/bird", async (req, res) => {
     "Device-Id": process.env.GUID,
     Platform: "ios",
     "App-Version": "4.119.0",
-    Location: JSON.stringify({"latitude":lat,"longitude":lon,"altitude":500,"accuracy":90,"speed":-1,"heading":-1})
+    Location: JSON.stringify({
+      latitude: lat,
+      longitude: lon,
+      altitude: 500,
+      accuracy: 90,
+      speed: -1,
+      heading: -1,
+    }),
   };
 
   const birdAppURL = `https://api-bird.prod.birdapp.com/bird/nearby?latitude=${lat}&longitude=${lon}&radius=${radius}`;
@@ -90,9 +97,7 @@ app.get("/bird", async (req, res) => {
   const birdData = await birdResponse.json();
 
   return res.json(birdData);
-
 });
-
 
 // Heroku sets process.env.PORT in production; use 8000 in dev
 const PORT = process.env.PORT || 8000;
