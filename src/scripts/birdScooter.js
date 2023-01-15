@@ -78,6 +78,7 @@ let firstCluster = 0;
 
 //Fetch DC API data with ES6 syntax
 export async function getBirdScooter(url = birdScooterURL) {
+  const loadingModal = document.getElementById("loading-microMobilityModal");
   const authResponse = await fetch(`/auth`);
   const accessToken = await authResponse.json();
 
@@ -112,6 +113,7 @@ export async function getBirdScooter(url = birdScooterURL) {
   }
   map.addLayer(birdMarkerClusters);
   updateNumBirdScooters(availableBikes);
+  loadingModal.style.display = "none";
 }
 
 //Bird Scooter Icon Image

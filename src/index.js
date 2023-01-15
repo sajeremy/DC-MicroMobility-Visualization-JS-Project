@@ -26,6 +26,8 @@ const markerDivElements = document.getElementsByClassName(
   "leaflet-pane leaflet-marker-pane"
 );
 let buttonArr = [];
+const loadingModal = document.getElementById("loading-microMobilityModal");
+
 const helbizButton = document.getElementById("helbizFilter");
 helbizButton.addEventListener("click", function () {
   // if (markerDivElements) {markerDivElements[0].remove()};
@@ -34,6 +36,7 @@ helbizButton.addEventListener("click", function () {
   // markerDivElementParent[0].appendChild(newMarkerDiv);
 
   if (!buttonArr.includes("helbiz")) {
+    loadingModal.style.display = "block";
     buttonArr.push("helbiz");
     document.getElementById("helbizFilter").className = "blueFilter";
     getHelbizScooter();
@@ -62,6 +65,7 @@ helbizButton.addEventListener("click", function () {
 const capitalButton = document.getElementById("capitalFilter");
 capitalButton.addEventListener("click", function () {
   if (!buttonArr.includes("capital")) {
+    loadingModal.style.display = "block";
     buttonArr.push("capital");
     document.getElementById("capitalFilter").className = "redFilter";
     getCapitalBike();
@@ -90,6 +94,7 @@ capitalButton.addEventListener("click", function () {
 const birdButton = document.getElementById("birdFilter");
 birdButton.addEventListener("click", function () {
   if (!buttonArr.includes("bird")) {
+    loadingModal.style.display = "block";
     buttonArr.push("bird");
     document.getElementById("birdFilter").className = "greenFilter";
     getBirdScooter();

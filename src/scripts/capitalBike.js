@@ -11,6 +11,7 @@ let firstCluster = 0;
 
 //Fetch data from Capital Bikeshare API
 export async function getCapitalBike() {
+  const loadingModal = document.getElementById("loading-microMobilityModal");
   const response = await fetch(capitalBikeURL);
   capitalData = await response.json();
 
@@ -34,6 +35,7 @@ export async function getCapitalBike() {
 
   map.addLayer(capitalMarkerClusters);
   updateNumCapitalBikes(availableBikes);
+  loadingModal.style.display = "none";
 }
 
 //Capital Bike Icon Image
