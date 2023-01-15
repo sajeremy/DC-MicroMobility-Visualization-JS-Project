@@ -56,19 +56,20 @@ export async function getBirdScooter(url = birdScooterURL) {
   let birdScooterArr;
 
   //Error handling utilizing backup API in case first does not fetch data
+  //Short Term Order
   try {
-    const authResponse = await fetch(`/auth`);
-    const accessToken = await authResponse.json();
-    birdResponse = await fetch(`/bird?auth=${encodeURIComponent(accessToken)}`);
-    birdData = await birdResponse.json();
-    birdScooterArr = birdData.birds;
-  } catch {
     birdAPI = false;
     birdResponse = await fetch(`/cors?url=${encodeURIComponent(url)}`);
-
+    birdData = await birdResponse.json();
+  } catch {
     try {
+      const authResponse = await fetch(`/auth`);
+      const accessToken = await authResponse.json();
+      birdResponse = await fetch(
+        `/bird?auth=${encodeURIComponent(accessToken)}`
+      );
       birdData = await birdResponse.json();
-      birdScooterArr = birdData.data.bikes;
+      birdScooterArr = birdData.birds;
     } catch {
       loadingModal.style.display = "none";
       document.getElementById("birdFilter").className = "noFilter";
@@ -78,7 +79,7 @@ export async function getBirdScooter(url = birdScooterURL) {
       return null;
     }
   }
-
+  birdScooterArr = birdData.data.bikes;
   let numBikes = birdScooterArr.length;
   let availableBikes = 0;
   birdMarkerArr = [];
