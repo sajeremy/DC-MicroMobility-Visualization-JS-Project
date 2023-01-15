@@ -65,18 +65,36 @@
 	color: red;
 	background-image: "./imgs/blue.png";
 } */
-.blueMarker {
-	color: black;
-	font-size: x-large;	
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+
+.greenMarker,
+.blueMarker,
 .redMarker {
-	color: black;
-	font-size: x-large;	
+	color: #2f455b;
+	font-size: large;	
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	width: 48px;
+	position: relative;
+	justify-content: center;
+	text-align: center;
 }
-.greenMarker {
-	color: black;
-	font-size: x-large;	
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+.bird-cluster-count-div,
+.capital-cluster-count-div,
+.helbiz-cluster-count-div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-80%);
+	width:20px;
+	height: 25px;
+}
+
+.bird-cluster-count-div {	
+	background-color: #94D82D;
+}
+.capital-cluster-count-div {
+	background-color: #FA5252;
+}
+.helbiz-cluster-count-div {
+	background-color: #5C7CFA;
 }

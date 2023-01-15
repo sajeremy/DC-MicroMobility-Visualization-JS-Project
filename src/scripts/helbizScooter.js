@@ -52,9 +52,9 @@ let helbizMarkerClusters = L.markerClusterGroup({
     return L.divIcon({
       html:
         "<div class='blueMarker'>" +
-        "<img src='./imgs/blue.png'><b>" +
-        cluster.getChildCount() +
-        "<b></div>",
+        "<img src='./imgs/blue.png'>" +
+        `<div class='helbiz-cluster-count-div'>${cluster.getChildCount()}</div>` +
+        "</div>",
       className: "helbizIcon",
       iconAnchor: [24, 24],
     });
@@ -77,7 +77,7 @@ let addHelbizMarker = function (lat, lon, firstCluster) {
   let helbizMarker = L.marker([lat, lon], { icon: helbizScooterIcon });
   let helbizPopup =
     "<b>Helbiz</b> <br>" +
-    "<img src='./imgs/helbizScooter.png' width='100px'>" +
+    "<img src='./imgs/helbizScooter.png' width='100' height='100'>" +
     `<b>Last Updated:</b><br> ${helbizFetchDate}<br>` +
     '<b><a href="https://helbiz.com/login"' +
     'target="_blank">Reserve Me</a></b>';

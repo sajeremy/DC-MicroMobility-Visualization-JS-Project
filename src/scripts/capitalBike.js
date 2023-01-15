@@ -58,9 +58,9 @@ let capitalMarkerClusters = L.markerClusterGroup({
     return L.divIcon({
       html:
         "<div class='redMarker'>" +
-        "<img src='./imgs/red.png'><b>" +
-        cluster.getChildCount() +
-        "<b></div>",
+        "<img src='./imgs/red.png'>" +
+        `<div class='capital-cluster-count-div'>${cluster.getChildCount()}</div>` +
+        "</div>",
       className: "capitalIcon",
       iconAnchor: [24, 24],
     });
@@ -83,7 +83,7 @@ let addCapitalMarker = function (lat, lon, firstCluster) {
   let capitalMarker = L.marker([lat, lon], { icon: capitalBikeIcon });
   let capitalPopup =
     "<b>Capital Bikeshare</b> <br>" +
-    "<img src='./imgs/capitalBike.png'>" +
+    "<img src='./imgs/capitalBike2.png' width='100' height='80'>" +
     `<b>Last Updated:</b><br> ${capitalFetchDate}<br>` +
     '<b><a href="https://account.lyft.com/findaccount?v=capital-bikeshare"' +
     'target="_blank">Reserve Me</a></b>';

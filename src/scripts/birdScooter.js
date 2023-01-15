@@ -113,9 +113,9 @@ let birdMarkerClusters = L.markerClusterGroup({
     return L.divIcon({
       html:
         "<div class='greenMarker'>" +
-        "<img src='./imgs/green.png'><b>" +
-        cluster.getChildCount() +
-        "<b></div>",
+        "<img src='./imgs/green.png'>" +
+        `<div class='bird-cluster-count-div'>${cluster.getChildCount()}</div>` +
+        "</div>",
       className: "birdIcon",
       iconAnchor: [24, 24],
     });
@@ -138,7 +138,7 @@ let addBirdMarker = function (lat, lon, scooter, firstCluster) {
   let birdMarker = L.marker([lat, lon], { icon: birdScooterIcon });
   let birdPopup =
     "<b>Bird</b> <br>" +
-    "<img src='./imgs/birdScooter.png' width='100px'>" +
+    "<img src='./imgs/birdScooter.png' width='100' height='100'>" +
     `<b>Last Updated:</b><br> ${birdFetchDate}<br>` +
     "<b>Charge:<b>" +
     ` ${scooter.battery_level}%` +
