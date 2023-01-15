@@ -11,6 +11,7 @@ let firstCluster = 0;
 
 //Fetch data from Helbiz Scooter API
 export async function getHelbizScooter() {
+  const loadingModal = document.getElementById("loading-microMobilityModal");
   const response = await fetch(helbizScooterURL);
   helbizData = await response.json();
 
@@ -35,17 +36,7 @@ export async function getHelbizScooter() {
 
   map.addLayer(helbizMarkerClusters);
   updateNumHelbizScooters(availableBikes);
-
-  // console.log(map.getBounds()._northEast.lat);
-  // console.log(map.getBounds()._northEast.lng);
-  // console.log(map.getBounds()._southWest.lat);
-  // console.log(map.getBounds()._southWest.lng);
-  // const mapPaneXY = document.getElementsByClassName("leaflet-pane leaflet-map-pane");
-  // const mapPaneZ = document.getElementsByClassName("leaflet-proxy leaflet-zoom-animated");
-  // console.log(mapPaneXY)
-  // console.log(mapPaneXY[0])
-  // console.log(mapPaneZ)
-  // console.log(mapPaneZ[0])
+  loadingModal.style.display = "none";
 }
 
 //Helbiz Scooter Icon Image
