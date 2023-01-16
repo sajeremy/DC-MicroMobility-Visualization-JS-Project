@@ -9,7 +9,8 @@ import { map } from "./map";
 
 //Declare Constants and Variables
 // const birdScooterURL = "https://cryptic-beyond-07137.herokuapp.com/https://gbfs.bird.co/dc"
-const birdScooterURL = "https://gbfs.bird.co/dc";
+// const birdScooterURL = "https://gbfs.bird.co/dc";
+const birdScooterURL = "https://gbfs.bird.co/d";
 // let birdData;
 let lat;
 let lon;
@@ -61,8 +62,10 @@ export async function getBirdScooter(url = birdScooterURL) {
     birdAPI = false;
     birdResponse = await fetch(`/cors?url=${encodeURIComponent(url)}`);
     birdData = await birdResponse.json();
+    birdScooterArr = birdData.data.bikes;
   } catch {
     try {
+      birdAPI = true;
       const authResponse = await fetch(`/auth`);
       const accessToken = await authResponse.json();
       birdResponse = await fetch(
@@ -79,17 +82,21 @@ export async function getBirdScooter(url = birdScooterURL) {
       return null;
     }
   }
-  birdScooterArr = birdData.data.bikes;
+
   let numBikes = birdScooterArr.length;
   let availableBikes = 0;
   birdMarkerArr = [];
 
   // Create markers for bikes not disabled or reserved
   for (let i = 0; i < numBikes; i++) {
-    lat = birdAPI ? birdScooterArr[i].location.latitude : birdScooterArr[i].lat;
-    lon = birdAPI
-      ? birdScooterArr[i].location.longitude
-      : birdScooterArr[i].lon;
+    lat =
+      birdAPI && birdScooterArr
+        ? birdScooterArr[i].location.latitude
+        : birdScooterArr[i].lat;
+    lon =
+      birdAPI && birdScooterArr
+        ? birdScooterArr[i].location.longitude
+        : birdScooterArr[i].lon;
     birdMarkerArr.push(
       addBirdMarker(lat, lon, birdScooterArr[i], firstCluster)
     );
