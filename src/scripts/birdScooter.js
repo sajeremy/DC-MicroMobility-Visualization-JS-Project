@@ -9,8 +9,7 @@ import { map } from "./map";
 
 //Declare Constants and Variables
 // const birdScooterURL = "https://cryptic-beyond-07137.herokuapp.com/https://gbfs.bird.co/dc"
-// const birdScooterURL = "https://gbfs.bird.co/dc";
-const birdScooterURL = "https://gbfs.bird.co/d";
+const birdScooterURL = "https://gbfs.bird.co/dc";
 // let birdData;
 let lat;
 let lon;
