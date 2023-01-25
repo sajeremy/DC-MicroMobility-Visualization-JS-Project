@@ -3,6 +3,7 @@ import "@fortawesome/fontawesome-free/js/fontawesome";
 import "@fortawesome/fontawesome-free/js/solid";
 import "@fortawesome/fontawesome-free/js/regular";
 import "@fortawesome/fontawesome-free/js/brands";
+import birdSeedData from "./birdScooterPlaceHolder.json";
 
 import { map } from "./map";
 // import { debug } from "webpack";
@@ -73,12 +74,14 @@ export async function getBirdScooter(url = birdScooterURL) {
       birdData = await birdResponse.json();
       birdScooterArr = birdData.birds;
     } catch {
-      loadingModal.style.display = "none";
-      document.getElementById("birdFilter").className = "noFilter";
-      alert(
-        "Apologies, experiencing difficulties fetching data.  Please try again later."
-      );
-      return null;
+      // loadingModal.style.display = "none";
+      // document.getElementById("birdFilter").className = "noFilter";
+      birdData = birdSeedData;
+      birdScooterArr = birdData.birds;
+      // birdData = alert(
+      //   "Apologies, the bird API originally utilized for this application has since deprecated.  In the mean time while I search for an alternative API, seed data will be provided for demonstration purposes. - JMS"
+      // );
+      // return null;
     }
   }
 
