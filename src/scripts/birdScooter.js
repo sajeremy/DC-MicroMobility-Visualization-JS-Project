@@ -67,20 +67,14 @@ export async function getBirdScooter(url = birdScooterURL) {
   //Error handling utilizing backup API in case first does not fetch data
   //Short Term Order
   try {
-    birdAPI = true;
-    const authResponse = await fetch(`/auth`);
-    const accessToken = await authResponse.json();
-    birdResponse = await fetch(`/bird?auth=${encodeURIComponent(accessToken)}`);
-    birdData = await birdResponse.json();
-    birdScooterArr = birdData.birds;
     // birdAPI = false;
     // birdResponse = await fetch(`/cors?url=${encodeURIComponent(url)}`);
     // birdData = await birdResponse.json();
     // birdScooterArr = birdData.data.bikes;
 
-    // birdAPI = true;
-    // birdData = birdSeedData;
-    // birdScooterArr = birdData.birds;
+    birdAPI = true;
+    birdData = birdSeedData;
+    birdScooterArr = birdData.birds;
   } catch {
     try {
       birdAPI = true;
