@@ -91,9 +91,9 @@ export async function getBirdScooter(url = birdScooterURL) {
       birdAPI = true;
       birdData = birdSeedData;
       birdScooterArr = birdData.birds;
-      // birdData = alert(
-      //   "Apologies, the bird API originally utilized for this application has since deprecated.  In the mean time while I search for an alternative API, seed data will be provided for demonstration purposes. - JMS"
-      // );
+      birdData = alert(
+        "Apologies, the bird API is currently not functioning so static data will be used in place for demonstration purposes. - JMS"
+      );
       // return null;
     }
   }
