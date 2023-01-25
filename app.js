@@ -62,6 +62,7 @@ app.get("/auth", async (req, res) => {
       headers: authTokenHeaders,
     }
   );
+  // console.log(authResponse);
   const authData = await authResponse.json();
   res.json(authData.access);
 });
