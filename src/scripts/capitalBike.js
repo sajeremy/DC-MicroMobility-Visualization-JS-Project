@@ -84,7 +84,14 @@ let addCapitalMarker = function (lat, lon, firstCluster) {
   let capitalPopup =
     "<b>Capital Bikeshare</b> <br>" +
     "<img src='./imgs/capitalBike2.png' width='100' height='80'>" +
-    `<b>Last Updated:</b><br> ${capitalFetchDate}<br>` +
+    `<b>Last Updated:</b><br> ${new Date().toLocaleString("en-US", {
+      weekday: "short",
+      month: "short",
+      day: "numeric",
+      hour: "numeric",
+      minute: "numeric",
+      hour12: true,
+    })}<br>` +
     '<b><a href="https://account.lyft.com/findaccount?v=capital-bikeshare"' +
     'target="_blank">Reserve Me</a></b>';
   capitalMarker.bindPopup(capitalPopup).openPopup();
@@ -101,20 +108,19 @@ function bikeNotDisabeled(idx) {
 function bikeNotReserved(idx) {
   return capitalData.data.bikes[idx].is_reserved === 0;
 }
-let capitalFetchDate = new Date().toLocaleString("en-US", {
-  weekday: "short",
-  month: "short",
-  day: "numeric",
-  hour: "numeric",
-  minute: "numeric",
-  hour12: true,
-});
 
 function updateNumCapitalBikes(availableBikes) {
   let numCapitalBikes = `Currently <span>${availableBikes}</span> Capital Bikes are available`;
   document.getElementById(
     "capitalDate"
-  ).innerHTML = `Last Updated: <span>${capitalFetchDate}</span>`;
+  ).innerHTML = `Last Updated: <span>${new Date().toLocaleString("en-US", {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+    hour12: true,
+  })}</span>`;
   document.getElementById("capitalBike").innerHTML = numCapitalBikes;
   document.getElementById("capital-title").innerHTML = "Capital";
 }
