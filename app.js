@@ -51,6 +51,7 @@ app.get("/auth", async (req, res) => {
     Platform: "ios",
     "App-Version": "4.119.0",
     "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
     "Content-Length": "0",
     Authorization: `Bearer ${process.env.REFRESH_AUTH}`,
   };
