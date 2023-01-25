@@ -78,7 +78,14 @@ let addHelbizMarker = function (lat, lon, firstCluster) {
   let helbizPopup =
     "<b>Helbiz</b> <br>" +
     "<img src='./imgs/helbizScooter.png' width='100' height='100'>" +
-    `<b>Last Updated:</b><br> ${helbizFetchDate}<br>` +
+    `<b>Last Updated:</b><br> ${new Date().toLocaleString("en-US", {
+      weekday: "short",
+      month: "short",
+      day: "numeric",
+      hour: "numeric",
+      minute: "numeric",
+      hour12: true,
+    })}<br>` +
     '<b><a href="https://helbiz.com/login"' +
     'target="_blank">Reserve Me</a></b>';
   helbizMarker.bindPopup(helbizPopup).openPopup();
@@ -96,19 +103,19 @@ function bikeNotDisabeled(idx) {
 function bikeNotReserved(idx) {
   return helbizData.data.bikes[idx].is_reserved === 0;
 }
-let helbizFetchDate = new Date().toLocaleString("en-US", {
-  weekday: "short",
-  month: "short",
-  day: "numeric",
-  hour: "numeric",
-  minute: "numeric",
-  hour12: true,
-});
+
 function updateNumHelbizScooters(availableBikes) {
   let numHelbizScooters = `Currently <span>${availableBikes}</span> Helbiz Scooters are available`;
   document.getElementById(
     "helbizDate"
-  ).innerHTML = `Last Updated: <span>${helbizFetchDate}</span>`;
+  ).innerHTML = `Last Updated: <span>${new Date().toLocaleString("en-US", {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+    hour12: true,
+  })}</span>`;
   document.getElementById("helbizScooter").innerHTML = numHelbizScooters;
   document.getElementById("helbiz-title").innerHTML = "Helbiz";
 }

@@ -55,6 +55,14 @@ export async function getBirdScooter(url = birdScooterURL) {
   let birdResponse;
   let birdData;
   let birdScooterArr;
+  let birdFetchDate = new Date().toLocaleString("en-US", {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+    hour12: true,
+  });
 
   //Error handling utilizing backup API in case first does not fetch data
   //Short Term Order
@@ -152,7 +160,14 @@ let addBirdMarker = function (lat, lon, scooter, firstCluster) {
   let birdPopup =
     "<b>Bird</b> <br>" +
     "<img src='./imgs/birdScooter.png' width='100' height='100'>" +
-    `<b>Last Updated:</b><br> ${birdFetchDate}<br>` +
+    `<b>Last Updated:</b><br> ${new Date().toLocaleString("en-US", {
+      weekday: "short",
+      month: "short",
+      day: "numeric",
+      hour: "numeric",
+      minute: "numeric",
+      hour12: true,
+    })}<br>` +
     "<b>Charge:<b>" +
     ` ${scooter.battery_level}%` +
     "  " +
@@ -167,20 +182,19 @@ let addBirdMarker = function (lat, lon, scooter, firstCluster) {
 };
 
 //Bird Scooter Async Function Helpers
-let birdFetchDate = new Date().toLocaleString("en-US", {
-  weekday: "short",
-  month: "short",
-  day: "numeric",
-  hour: "numeric",
-  minute: "numeric",
-  hour12: true,
-});
 
 function updateNumBirdScooters(availableBikes) {
   let numBirdScooters = `Currently <span>${availableBikes}</span> scooters are available`;
   document.getElementById(
     "birdDate"
-  ).innerHTML = `Last Updated: <span>${birdFetchDate}</span>`;
+  ).innerHTML = `Last Updated: <span>${new Date().toLocaleString("en-US", {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+    hour12: true,
+  })}</span>`;
   document.getElementById("birdScooter").innerHTML = numBirdScooters;
   document.getElementById("bird-title").innerHTML = "Bird";
 }
