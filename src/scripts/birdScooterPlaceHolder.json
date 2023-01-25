@@ -1,0 +1,2183 @@
+{
+    "birds": [
+        {
+            "id": "622d907e-eac7-4a4c-908e-9bab059d33aa",
+            "location": {
+                "latitude": 38.91664123333333,
+                "longitude": -77.03573608333333
+            },
+            "code": "I72••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "1b722308-264a-482c-852f-82a43cf3075a",
+            "battery_level": 53,
+            "estimated_range": 18142,
+            "bounty_id": "a303b6c7-dc33-4146-9c9f-655ae1dbfa76",
+            "area_key": "68018BA691B0E9B0942B0CEDEE3C643C",
+            "has_helmet": false
+        },
+        {
+            "id": "0d36e6e6-1741-415e-983d-2dd1f405faf7",
+            "location": {
+                "latitude": 38.92045975,
+                "longitude": -77.01688385000001
+            },
+            "code": "71Z••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "1b722308-264a-482c-852f-82a43cf3075a",
+            "battery_level": 28,
+            "estimated_range": 9650,
+            "area_key": "68018BA691B0E9B0942B0CEDEE3C643C",
+            "has_helmet": false
+        },
+        {
+            "id": "f26e4d7c-3161-4592-a3b3-61f568c0cf1d",
+            "location": {
+                "latitude": 38.90303421666667,
+                "longitude": -77.06505585
+            },
+            "code": "NJL••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "775bfd21-a696-4a26-b5d1-d4aac5c4653b",
+            "battery_level": 52,
+            "estimated_range": 17756,
+            "bounty_id": "34c5ee61-2ac1-4e63-a625-aa4999614a56",
+            "area_key": "D0E9D430F7142DD8E3566408495DC104",
+            "has_helmet": false
+        },
+        {
+            "id": "b8dd8c8a-34a2-4a83-9366-d16f414aba9d",
+            "location": {
+                "latitude": 38.91706085,
+                "longitude": -77.01111603333334
+            },
+            "code": "AXV••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "2a684316-d4a7-43e5-878b-95b079904483",
+            "battery_level": 19,
+            "estimated_range": 6562,
+            "area_key": "7F72E15524E084B559F40CA8DF5EB279",
+            "has_helmet": false
+        },
+        {
+            "id": "aae12e36-1476-420e-83f7-39ea7bf24e51",
+            "location": {
+                "latitude": 38.93152,
+                "longitude": -77.038573
+            },
+            "code": "NYS••",
+            "model": "eb100",
+            "vehicle_class": "bike",
+            "captive": false,
+            "partner_id": "e5f8bab6-a103-45de-8ecf-d1fdfd08b7c8",
+            "battery_level": 19,
+            "estimated_range": 8874,
+            "area_key": "1D6378B28005243F53D56A3D9CF3AA24",
+            "has_helmet": false
+        },
+        {
+            "id": "18d09dca-d0dc-4477-831d-9e2c4dc9f407",
+            "location": {
+                "latitude": 38.8990593,
+                "longitude": -77.07051086666667
+            },
+            "code": "JEZ••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "775bfd21-a696-4a26-b5d1-d4aac5c4653b",
+            "battery_level": 42,
+            "estimated_range": 14282,
+            "bounty_id": "fb132955-074b-4d82-9e92-3bbcb6d25c2f",
+            "area_key": "D0E9D430F7142DD8E3566408495DC104",
+            "has_helmet": false
+        },
+        {
+            "id": "ea5b2a7f-48b1-44cf-9754-0fb65c1f673d",
+            "location": {
+                "latitude": 38.89709091666667,
+                "longitude": -77.070961
+            },
+            "code": "WDP••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "2a684316-d4a7-43e5-878b-95b079904483",
+            "battery_level": 51,
+            "estimated_range": 17370,
+            "area_key": "7F72E15524E084B559F40CA8DF5EB279",
+            "has_helmet": false
+        },
+        {
+            "id": "e473f0c4-87cb-42fa-bb62-82e8ad2a6770",
+            "location": {
+                "latitude": 38.89733886666667,
+                "longitude": -77.07113646666667
+            },
+            "code": "QAF••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 80,
+            "estimated_range": 27020,
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "d9d431fb-8a4b-4a84-9751-926e18eb9206",
+            "location": {
+                "latitude": 38.895812983333336,
+                "longitude": -77.0707779
+            },
+            "code": "YBG••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 88,
+            "estimated_range": 29722,
+            "bounty_id": "a3b2e405-faa1-4df7-8532-1e4a4ad7c98f",
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "4cb9a0f8-b59c-4c27-9951-ea0b02a1cc51",
+            "location": {
+                "latitude": 38.8971755,
+                "longitude": -77.07163633333333
+            },
+            "code": "QEC••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "775bfd21-a696-4a26-b5d1-d4aac5c4653b",
+            "battery_level": 67,
+            "estimated_range": 22774,
+            "area_key": "D0E9D430F7142DD8E3566408495DC104",
+            "has_helmet": false
+        },
+        {
+            "id": "9013d9ad-005d-4cbc-9dea-cff74ff399e5",
+            "location": {
+                "latitude": 38.898143766666664,
+                "longitude": -77.07207488333333
+            },
+            "code": "6PX••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "775bfd21-a696-4a26-b5d1-d4aac5c4653b",
+            "battery_level": 43,
+            "estimated_range": 14668,
+            "bounty_id": "d969c222-9e36-4a5e-8f0f-4b31fb4657b9",
+            "area_key": "D0E9D430F7142DD8E3566408495DC104",
+            "has_helmet": false
+        },
+        {
+            "id": "d69961af-7cd9-4671-9109-d65e540f67ff",
+            "location": {
+                "latitude": 38.896614066666665,
+                "longitude": -77.07136535
+            },
+            "code": "I5X••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "775bfd21-a696-4a26-b5d1-d4aac5c4653b",
+            "battery_level": 73,
+            "estimated_range": 24704,
+            "bounty_id": "67cc01c6-5f2d-4b2a-9362-6f834f0e1e43",
+            "area_key": "D0E9D430F7142DD8E3566408495DC104",
+            "has_helmet": false
+        },
+        {
+            "id": "7597bc43-5c63-4846-b734-d6aaa675d46b",
+            "location": {
+                "latitude": 38.89696883333333,
+                "longitude": -77.07163238333332
+            },
+            "code": "542••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "775bfd21-a696-4a26-b5d1-d4aac5c4653b",
+            "battery_level": 30,
+            "estimated_range": 10036,
+            "area_key": "D0E9D430F7142DD8E3566408495DC104",
+            "has_helmet": false
+        },
+        {
+            "id": "39911117-186d-4343-8f9c-6ad4419e0e0f",
+            "location": {
+                "latitude": 38.89500426666667,
+                "longitude": -77.07077026666666
+            },
+            "code": "SJQ••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "1b722308-264a-482c-852f-82a43cf3075a",
+            "battery_level": 40,
+            "estimated_range": 13510,
+            "bounty_id": "8417c6aa-7c7e-46dd-a10e-232a54505c80",
+            "area_key": "68018BA691B0E9B0942B0CEDEE3C643C",
+            "has_helmet": false
+        },
+        {
+            "id": "5b358b60-a1ee-41b7-b736-fd53ca9ce5e7",
+            "location": {
+                "latitude": 38.89464188333333,
+                "longitude": -77.07059478333333
+            },
+            "code": "BD1••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "775bfd21-a696-4a26-b5d1-d4aac5c4653b",
+            "battery_level": 83,
+            "estimated_range": 28178,
+            "area_key": "D0E9D430F7142DD8E3566408495DC104",
+            "has_helmet": false
+        },
+        {
+            "id": "2426de5f-9261-435d-8e7c-da9ccef6cf7d",
+            "location": {
+                "latitude": 38.89208733333333,
+                "longitude": -77.07023216666667
+            },
+            "code": "5D6••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "2a684316-d4a7-43e5-878b-95b079904483",
+            "battery_level": 32,
+            "estimated_range": 10808,
+            "area_key": "7F72E15524E084B559F40CA8DF5EB279",
+            "has_helmet": false
+        },
+        {
+            "id": "623e71a3-726f-4bdd-9912-29a42311f031",
+            "location": {
+                "latitude": 38.895036,
+                "longitude": -77.073538
+            },
+            "code": "Y9V••",
+            "model": "eb100",
+            "vehicle_class": "bike",
+            "captive": false,
+            "partner_id": "e5f8bab6-a103-45de-8ecf-d1fdfd08b7c8",
+            "battery_level": 75,
+            "estimated_range": 34510,
+            "bounty_id": "fe941495-4d75-4e25-a005-8ede059e059c",
+            "area_key": "1D6378B28005243F53D56A3D9CF3AA24",
+            "has_helmet": false
+        },
+        {
+            "id": "245b6307-0fe1-48d4-9769-b52f6c1ffae1",
+            "location": {
+                "latitude": 38.89395141666667,
+                "longitude": -77.07295226666666
+            },
+            "code": "8Z5••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 44,
+            "estimated_range": 15054,
+            "bounty_id": "d062fa2b-102e-4eed-953e-2ee6a78a207c",
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "a84503f1-9e2d-4a44-a11d-a21a225f025d",
+            "location": {
+                "latitude": 38.89398575,
+                "longitude": -77.07321929999999
+            },
+            "code": "21Q••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 84,
+            "estimated_range": 28564,
+            "bounty_id": "91163ebb-b192-477f-b3e6-447e9e6df039",
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "7261fce9-3ecc-4cd3-bb1b-4649a24b20f5",
+            "location": {
+                "latitude": 38.88490676666667,
+                "longitude": -77.06562041666666
+            },
+            "code": "5DU••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 16,
+            "estimated_range": 5404,
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "9497064a-2fc3-40e7-997c-18ee5c9cf6c2",
+            "location": {
+                "latitude": 38.89459991666667,
+                "longitude": -77.07453918333334
+            },
+            "code": "X41••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 83,
+            "estimated_range": 28178,
+            "bounty_id": "d787ea99-7d0d-4c2c-8061-2071f7aed52c",
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "fab56f52-abe5-481a-87ae-89ea2196033e",
+            "location": {
+                "latitude": 38.89445495,
+                "longitude": -77.0744934
+            },
+            "code": "K9J••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "1b722308-264a-482c-852f-82a43cf3075a",
+            "battery_level": 81,
+            "estimated_range": 27406,
+            "area_key": "68018BA691B0E9B0942B0CEDEE3C643C",
+            "has_helmet": false
+        },
+        {
+            "id": "8e440001-7471-4252-9b78-07aa37d75d52",
+            "location": {
+                "latitude": 38.8978386,
+                "longitude": -77.07629395000001
+            },
+            "code": "VHI••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 58,
+            "estimated_range": 19686,
+            "bounty_id": "cec34704-1cf9-4255-bc4c-ef60f89bb1aa",
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "cac3d060-deb3-41ef-923c-0eae856839bf",
+            "location": {
+                "latitude": 38.894638066666666,
+                "longitude": -77.07508086666667
+            },
+            "code": "1KG••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "1b722308-264a-482c-852f-82a43cf3075a",
+            "battery_level": 66,
+            "estimated_range": 22388,
+            "bounty_id": "40376f47-055d-4b71-86b8-933cac96ab88",
+            "area_key": "68018BA691B0E9B0942B0CEDEE3C643C",
+            "has_helmet": false
+        },
+        {
+            "id": "8469c9a1-4be7-46ec-b985-d288c85b757a",
+            "location": {
+                "latitude": 38.893978116666666,
+                "longitude": -77.07577515
+            },
+            "code": "C4I••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "1b722308-264a-482c-852f-82a43cf3075a",
+            "battery_level": 36,
+            "estimated_range": 12352,
+            "area_key": "68018BA691B0E9B0942B0CEDEE3C643C",
+            "has_helmet": false
+        },
+        {
+            "id": "94be0da4-f3cc-410b-afa0-92b0dbc00a6f",
+            "location": {
+                "latitude": 38.889036879051105,
+                "longitude": -77.07320743969554
+            },
+            "code": "73K••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 75,
+            "estimated_range": 25476,
+            "bounty_id": "3e8f2c38-dd30-46d4-a0ff-a2c15d83ce67",
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "a369abae-374b-40df-b741-5deecb0b8f79",
+            "location": {
+                "latitude": 38.893367766666664,
+                "longitude": -77.0764389
+            },
+            "code": "A6Y••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "1b722308-264a-482c-852f-82a43cf3075a",
+            "battery_level": 81,
+            "estimated_range": 27406,
+            "bounty_id": "f130be4b-8d69-4c66-859f-80fb7350c71d",
+            "area_key": "68018BA691B0E9B0942B0CEDEE3C643C",
+            "has_helmet": false
+        },
+        {
+            "id": "5a42ef48-c692-4ca6-a3d3-4c63fa8e86f1",
+            "location": {
+                "latitude": 38.893311833333335,
+                "longitude": -77.07641816666666
+            },
+            "code": "6GV••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "775bfd21-a696-4a26-b5d1-d4aac5c4653b",
+            "battery_level": 73,
+            "estimated_range": 24704,
+            "bounty_id": "79d48743-146d-498a-aef3-c4561c36b751",
+            "area_key": "D0E9D430F7142DD8E3566408495DC104",
+            "has_helmet": false
+        },
+        {
+            "id": "f5e211d6-e094-4bb8-96ce-25c6614414fc",
+            "location": {
+                "latitude": 38.89312743333333,
+                "longitude": -77.07723998333333
+            },
+            "code": "KUN••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 15,
+            "estimated_range": 5018,
+            "bounty_id": "676cb8a5-a931-4ce6-aba6-87f17e1c5485",
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "c339998e-e2d5-4693-9631-1a3fca9f1a91",
+            "location": {
+                "latitude": 38.89116668333334,
+                "longitude": -77.07619476666667
+            },
+            "code": "Y33••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 26,
+            "estimated_range": 8878,
+            "bounty_id": "7e589cef-cae9-4f80-b62b-600d1d689aca",
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "dcf2c7f5-06f0-4076-8fdb-911b1cff2b05",
+            "location": {
+                "latitude": 38.893308166666664,
+                "longitude": -77.0775885
+            },
+            "code": "3W5••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "2a684316-d4a7-43e5-878b-95b079904483",
+            "battery_level": 47,
+            "estimated_range": 15826,
+            "area_key": "7F72E15524E084B559F40CA8DF5EB279",
+            "has_helmet": false
+        },
+        {
+            "id": "ee87a85b-54cb-427a-a003-8fc7941d89fa",
+            "location": {
+                "latitude": 38.88897323333333,
+                "longitude": -77.07479858333333
+            },
+            "code": "IQB••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "775bfd21-a696-4a26-b5d1-d4aac5c4653b",
+            "battery_level": 83,
+            "estimated_range": 28178,
+            "bounty_id": "af3d196c-f4e3-41d9-9b46-1875d8145f1c",
+            "area_key": "D0E9D430F7142DD8E3566408495DC104",
+            "has_helmet": false
+        },
+        {
+            "id": "235eadbc-f209-4a91-b805-a6cd2bb45282",
+            "location": {
+                "latitude": 38.896137233333334,
+                "longitude": -77.07917785
+            },
+            "code": "I6E••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 85,
+            "estimated_range": 28950,
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "d1085f11-30a6-491d-9a0e-a2bd0d2e4b81",
+            "location": {
+                "latitude": 38.892025,
+                "longitude": -77.07717133333334
+            },
+            "code": "K6G••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "1b722308-264a-482c-852f-82a43cf3075a",
+            "battery_level": 28,
+            "estimated_range": 9650,
+            "bounty_id": "6172be51-c06b-4e9e-921f-0c5c6f514b0c",
+            "area_key": "68018BA691B0E9B0942B0CEDEE3C643C",
+            "has_helmet": false
+        },
+        {
+            "id": "1bd7b9ce-fb02-4f85-b097-94dc4033d97a",
+            "location": {
+                "latitude": 38.89165115,
+                "longitude": -77.07701873333333
+            },
+            "code": "ZWV••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "1b722308-264a-482c-852f-82a43cf3075a",
+            "battery_level": 40,
+            "estimated_range": 13510,
+            "area_key": "68018BA691B0E9B0942B0CEDEE3C643C",
+            "has_helmet": false
+        },
+        {
+            "id": "3798d85b-0fca-43ad-b7a6-ae3f6beb1c2a",
+            "location": {
+                "latitude": 38.89887618333333,
+                "longitude": -77.08049774999999
+            },
+            "code": "SZP••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "1b722308-264a-482c-852f-82a43cf3075a",
+            "battery_level": 25,
+            "estimated_range": 8492,
+            "area_key": "68018BA691B0E9B0942B0CEDEE3C643C",
+            "has_helmet": false
+        },
+        {
+            "id": "a5f83378-7c4c-4dd8-8e51-be0da46b9fcd",
+            "location": {
+                "latitude": 38.89330291666667,
+                "longitude": -77.0785904
+            },
+            "code": "U55••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 20,
+            "estimated_range": 6948,
+            "bounty_id": "4dc70364-b9d6-4586-844d-bf002563ac13",
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "984eab02-2f58-499c-8b5d-818c5df719b1",
+            "location": {
+                "latitude": 38.890198,
+                "longitude": -77.07665
+            },
+            "code": "5Z3••",
+            "model": "eb100",
+            "vehicle_class": "bike",
+            "captive": false,
+            "partner_id": "e5f8bab6-a103-45de-8ecf-d1fdfd08b7c8",
+            "battery_level": 54,
+            "estimated_range": 24650,
+            "bounty_id": "990633dc-859b-4706-9582-2ee907e563c5",
+            "area_key": "1D6378B28005243F53D56A3D9CF3AA24",
+            "has_helmet": false
+        },
+        {
+            "id": "9e01f524-aeb2-4b88-920a-62863d389ed3",
+            "location": {
+                "latitude": 38.89813613333333,
+                "longitude": -77.08148956666668
+            },
+            "code": "RPS••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "1b722308-264a-482c-852f-82a43cf3075a",
+            "battery_level": 25,
+            "estimated_range": 8492,
+            "bounty_id": "11836ec9-ea73-429b-b418-5d56b27930b8",
+            "area_key": "68018BA691B0E9B0942B0CEDEE3C643C",
+            "has_helmet": false
+        },
+        {
+            "id": "49c859b5-9bbf-425d-8839-d2918745d158",
+            "location": {
+                "latitude": 38.88809966666667,
+                "longitude": -77.07724761666667
+            },
+            "code": "YT7••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "775bfd21-a696-4a26-b5d1-d4aac5c4653b",
+            "battery_level": 41,
+            "estimated_range": 13896,
+            "bounty_id": "1862116b-113a-4629-943a-22720a646f5b",
+            "area_key": "D0E9D430F7142DD8E3566408495DC104",
+            "has_helmet": false
+        },
+        {
+            "id": "21bcdd20-100d-46f1-ba18-e2aa7df9c66d",
+            "location": {
+                "latitude": 38.89876938333334,
+                "longitude": -77.08300018333333
+            },
+            "code": "6K3••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 30,
+            "estimated_range": 10036,
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "f4d84d8e-e61a-4525-87b2-724f2ba572b8",
+            "location": {
+                "latitude": 38.895023349999995,
+                "longitude": -77.08232116666666
+            },
+            "code": "32W••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "775bfd21-a696-4a26-b5d1-d4aac5c4653b",
+            "battery_level": 91,
+            "estimated_range": 30880,
+            "area_key": "D0E9D430F7142DD8E3566408495DC104",
+            "has_helmet": false
+        },
+        {
+            "id": "589002b1-3736-4f49-82cf-539b09938a82",
+            "location": {
+                "latitude": 38.88982683333334,
+                "longitude": -77.07979766666668
+            },
+            "code": "2MY••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 35,
+            "estimated_range": 11966,
+            "bounty_id": "9eee5c2c-fa52-42b0-895d-35491260a392",
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "1a69ebc1-58fe-4244-a4d5-b50c7d5a24af",
+            "location": {
+                "latitude": 38.8898125,
+                "longitude": -77.07978833333333
+            },
+            "code": "359••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 43,
+            "estimated_range": 14668,
+            "bounty_id": "e4b24d08-9646-46e5-8296-c0114f2cb6e9",
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "6e2eda5d-5c21-4468-9af2-5cc01eed1854",
+            "location": {
+                "latitude": 38.889823916666664,
+                "longitude": -77.07982635
+            },
+            "code": "IBC••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 50,
+            "estimated_range": 16984,
+            "bounty_id": "c46eceeb-88e6-4016-96c2-2530468160f8",
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "61fb8973-a1ec-4a5a-a7bd-7331dab3a985",
+            "location": {
+                "latitude": 38.88954543333333,
+                "longitude": -77.08018493333334
+            },
+            "code": "39P••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 16,
+            "estimated_range": 5404,
+            "bounty_id": "60fea196-238e-4f0c-9479-88ef61a1e517",
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "c8ddedf4-141c-4d5d-9b26-18372ff83811",
+            "location": {
+                "latitude": 38.888477333333334,
+                "longitude": -77.07981873333333
+            },
+            "code": "UUJ••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 93,
+            "estimated_range": 31652,
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "d986afa7-e2c1-4f09-b68f-84e8d826a055",
+            "location": {
+                "latitude": 38.8912125,
+                "longitude": -77.0816725
+            },
+            "code": "D28••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "775bfd21-a696-4a26-b5d1-d4aac5c4653b",
+            "battery_level": 70,
+            "estimated_range": 23932,
+            "area_key": "D0E9D430F7142DD8E3566408495DC104",
+            "has_helmet": false
+        },
+        {
+            "id": "f64abd11-5f37-4455-9dd9-77620fa8052c",
+            "location": {
+                "latitude": 38.89005661666667,
+                "longitude": -77.08172606666668
+            },
+            "code": "BK6••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "775bfd21-a696-4a26-b5d1-d4aac5c4653b",
+            "battery_level": 57,
+            "estimated_range": 19300,
+            "area_key": "D0E9D430F7142DD8E3566408495DC104",
+            "has_helmet": false
+        },
+        {
+            "id": "a5d896ed-ccbe-4c18-b278-ae80031551f2",
+            "location": {
+                "latitude": 38.889732366666664,
+                "longitude": -77.08158111666667
+            },
+            "code": "GF2••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 93,
+            "estimated_range": 31652,
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "bddc87f0-3924-413e-9fa1-8a187067e1c7",
+            "location": {
+                "latitude": 38.88978958333333,
+                "longitude": -77.08161926666666
+            },
+            "code": "F3J••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 95,
+            "estimated_range": 32424,
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "b29d89a8-ee6d-4073-b4fa-cfac204a0ea0",
+            "location": {
+                "latitude": 38.88978576666667,
+                "longitude": -77.08168793333333
+            },
+            "code": "H4S••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "1b722308-264a-482c-852f-82a43cf3075a",
+            "battery_level": 38,
+            "estimated_range": 12738,
+            "bounty_id": "2491257c-7674-46be-9e19-dfdb02157278",
+            "area_key": "68018BA691B0E9B0942B0CEDEE3C643C",
+            "has_helmet": false
+        },
+        {
+            "id": "3035288f-ee62-4c62-ad0b-919fbe72c519",
+            "location": {
+                "latitude": 38.891677849999994,
+                "longitude": -77.0828247
+            },
+            "code": "ZT5••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 10,
+            "estimated_range": 3474,
+            "bounty_id": "2634ec92-2e2e-423a-a8d5-df55956999e7",
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "4cdad005-06d0-4c5d-aa83-2fb067f59166",
+            "location": {
+                "latitude": 38.889923100000004,
+                "longitude": -77.08178711666666
+            },
+            "code": "N2A••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 32,
+            "estimated_range": 10808,
+            "bounty_id": "35d4c7d3-5402-457a-b82c-74191ff2bb0e",
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "7237a1ff-3cc1-49dd-9fe4-293bbde48164",
+            "location": {
+                "latitude": 38.889862066666666,
+                "longitude": -77.08174896666667
+            },
+            "code": "YPW••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "1b722308-264a-482c-852f-82a43cf3075a",
+            "battery_level": 91,
+            "estimated_range": 30880,
+            "bounty_id": "06de20a0-ccd8-4d62-872f-39590631850a",
+            "area_key": "68018BA691B0E9B0942B0CEDEE3C643C",
+            "has_helmet": false
+        },
+        {
+            "id": "2ccde5f3-4447-473d-af9b-58dba5820237",
+            "location": {
+                "latitude": 38.890047833333334,
+                "longitude": -77.0818745
+            },
+            "code": "232••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 44,
+            "estimated_range": 15054,
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "f08ca442-7115-4cbc-bb7d-2eaa253f59c9",
+            "location": {
+                "latitude": 38.889862066666666,
+                "longitude": -77.08176421666667
+            },
+            "code": "BUN••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "1b722308-264a-482c-852f-82a43cf3075a",
+            "battery_level": 88,
+            "estimated_range": 29722,
+            "bounty_id": "18a4e865-8c48-40fb-a342-9fcf52e20043",
+            "area_key": "68018BA691B0E9B0942B0CEDEE3C643C",
+            "has_helmet": false
+        },
+        {
+            "id": "fee4e1f8-231d-4a3d-8b51-52ba8278e454",
+            "location": {
+                "latitude": 38.88978576666667,
+                "longitude": -77.0817566
+            },
+            "code": "VR3••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 91,
+            "estimated_range": 30880,
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "69565dc5-66bf-4b38-9f05-20ab07d6558d",
+            "location": {
+                "latitude": 38.889801033333335,
+                "longitude": -77.08178711666666
+            },
+            "code": "KQZ••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 93,
+            "estimated_range": 31652,
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "26b911ce-c4a5-4eae-801c-df8aceb68188",
+            "location": {
+                "latitude": 38.88980865,
+                "longitude": -77.08179473333333
+            },
+            "code": "M42••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 64,
+            "estimated_range": 21616,
+            "bounty_id": "bcc2eb63-fb8c-4aac-bed6-51ed6c811e82",
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "cf62722c-d896-4ab1-9314-f162cfe7e8b5",
+            "location": {
+                "latitude": 38.889919283333334,
+                "longitude": -77.08187103333333
+            },
+            "code": "RXX••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 84,
+            "estimated_range": 28564,
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "3521179f-bb45-4808-b718-a4d8bed18f0a",
+            "location": {
+                "latitude": 38.888351433333334,
+                "longitude": -77.08087921666667
+            },
+            "code": "BWZ••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "2a684316-d4a7-43e5-878b-95b079904483",
+            "battery_level": 47,
+            "estimated_range": 15826,
+            "area_key": "7F72E15524E084B559F40CA8DF5EB279",
+            "has_helmet": false
+        },
+        {
+            "id": "4a4a06b3-5696-461b-85d9-71cb54f26a45",
+            "location": {
+                "latitude": 38.88786316666666,
+                "longitude": -77.0805664
+            },
+            "code": "3BA••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 86,
+            "estimated_range": 29336,
+            "bounty_id": "539d499e-823c-4c12-b8dd-d73d136ac4f4",
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "cfbd7d57-393b-4c1d-babf-17fbefefe0fa",
+            "location": {
+                "latitude": 38.889617916666666,
+                "longitude": -77.08180236666666
+            },
+            "code": "V8L••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "1b722308-264a-482c-852f-82a43cf3075a",
+            "battery_level": 88,
+            "estimated_range": 29722,
+            "bounty_id": "193b2e1b-92f5-4173-939b-28d5ef68a645",
+            "area_key": "68018BA691B0E9B0942B0CEDEE3C643C",
+            "has_helmet": false
+        },
+        {
+            "id": "f9adcbe4-904b-4500-b74f-12efab3fa2e3",
+            "location": {
+                "latitude": 38.8896141,
+                "longitude": -77.08184815
+            },
+            "code": "S4D••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "1b722308-264a-482c-852f-82a43cf3075a",
+            "battery_level": 32,
+            "estimated_range": 10808,
+            "bounty_id": "0f1d6f85-e65b-491d-95ba-b55fae4968ba",
+            "area_key": "68018BA691B0E9B0942B0CEDEE3C643C",
+            "has_helmet": false
+        },
+        {
+            "id": "c5a632ef-66f2-4a06-8f6e-8342f2d88eef",
+            "location": {
+                "latitude": 38.89657616666667,
+                "longitude": -77.08553016666666
+            },
+            "code": "JU9••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "775bfd21-a696-4a26-b5d1-d4aac5c4653b",
+            "battery_level": 16,
+            "estimated_range": 5404,
+            "area_key": "D0E9D430F7142DD8E3566408495DC104",
+            "has_helmet": false
+        },
+        {
+            "id": "af325a78-4c59-427c-9a53-38189875fb3d",
+            "location": {
+                "latitude": 38.896573333333336,
+                "longitude": -77.085537
+            },
+            "code": "N9T••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "775bfd21-a696-4a26-b5d1-d4aac5c4653b",
+            "battery_level": 83,
+            "estimated_range": 28178,
+            "area_key": "D0E9D430F7142DD8E3566408495DC104",
+            "has_helmet": false
+        },
+        {
+            "id": "77a4dd3b-9bad-430a-8b42-3926bd9996ea",
+            "location": {
+                "latitude": 38.896394,
+                "longitude": -77.085476
+            },
+            "code": "HGV••",
+            "model": "eb100",
+            "vehicle_class": "bike",
+            "captive": false,
+            "partner_id": "e5f8bab6-a103-45de-8ecf-d1fdfd08b7c8",
+            "battery_level": 49,
+            "estimated_range": 22678,
+            "bounty_id": "fe31be2b-a753-4fe6-b162-b11f63e61676",
+            "area_key": "1D6378B28005243F53D56A3D9CF3AA24",
+            "has_helmet": false
+        },
+        {
+            "id": "efe71e00-fac8-4dbc-a693-12e03f06d38e",
+            "location": {
+                "latitude": 38.89651108333333,
+                "longitude": -77.08559418333333
+            },
+            "code": "IPA••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 53,
+            "estimated_range": 18142,
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "c51039d7-d7c7-42e6-9200-283f5e19318b",
+            "location": {
+                "latitude": 38.89710998333333,
+                "longitude": -77.08582306666668
+            },
+            "code": "FLD••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 45,
+            "estimated_range": 15440,
+            "bounty_id": "6e668d75-a306-4f37-bb10-3d48cf3a31e4",
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "ab236a1b-6918-4fd9-a108-1495bcef3df4",
+            "location": {
+                "latitude": 38.889786666666666,
+                "longitude": -77.082473
+            },
+            "code": "EFI••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "775bfd21-a696-4a26-b5d1-d4aac5c4653b",
+            "battery_level": 63,
+            "estimated_range": 21230,
+            "area_key": "D0E9D430F7142DD8E3566408495DC104",
+            "has_helmet": false
+        },
+        {
+            "id": "459afabf-a2e5-4fef-87d7-c08051d21728",
+            "location": {
+                "latitude": 38.888267,
+                "longitude": -77.08151
+            },
+            "code": "Q3N••",
+            "model": "eb100",
+            "vehicle_class": "bike",
+            "captive": false,
+            "partner_id": "e5f8bab6-a103-45de-8ecf-d1fdfd08b7c8",
+            "battery_level": 57,
+            "estimated_range": 26129,
+            "area_key": "1D6378B28005243F53D56A3D9CF3AA24",
+            "has_helmet": false
+        },
+        {
+            "id": "41ae0ed7-99c2-49c3-9956-56e8ad838dea",
+            "location": {
+                "latitude": 38.88963318333333,
+                "longitude": -77.08289336666667
+            },
+            "code": "KTC••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 64,
+            "estimated_range": 21616,
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "d5eee607-6458-4e2a-8178-bde7a4a925f4",
+            "location": {
+                "latitude": 38.889163,
+                "longitude": -77.082703
+            },
+            "code": "GJG••",
+            "model": "eb100",
+            "vehicle_class": "bike",
+            "captive": false,
+            "partner_id": "e5f8bab6-a103-45de-8ecf-d1fdfd08b7c8",
+            "battery_level": 47,
+            "estimated_range": 21692,
+            "bounty_id": "377af278-ef8a-4318-920f-7658e1c0e66e",
+            "area_key": "1D6378B28005243F53D56A3D9CF3AA24",
+            "has_helmet": false
+        },
+        {
+            "id": "7443e6fa-ada1-4809-ba00-a657a67404ea",
+            "location": {
+                "latitude": 38.89624405,
+                "longitude": -77.08641051666667
+            },
+            "code": "LL6••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 74,
+            "estimated_range": 25090,
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "44c20e0b-d9ae-47e9-8c1b-766e034fd882",
+            "location": {
+                "latitude": 38.89619065,
+                "longitude": -77.08641051666667
+            },
+            "code": "6I5••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 32,
+            "estimated_range": 10808,
+            "bounty_id": "4db1a42a-a8f3-4b24-a22a-5eef315a1592",
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "1f45c5d5-d75f-4417-bcde-422cb09f9c71",
+            "location": {
+                "latitude": 38.89591216666667,
+                "longitude": -77.08631896666667
+            },
+            "code": "CAT••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 76,
+            "estimated_range": 25862,
+            "bounty_id": "6c3d90f8-9217-4a95-ab38-c3afad3167fe",
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "9459f027-0c53-4161-b127-8df1ce10a53b",
+            "location": {
+                "latitude": 38.889083,
+                "longitude": -77.082952
+            },
+            "code": "5BN••",
+            "model": "eb100",
+            "vehicle_class": "bike",
+            "captive": false,
+            "partner_id": "e5f8bab6-a103-45de-8ecf-d1fdfd08b7c8",
+            "battery_level": 52,
+            "estimated_range": 23664,
+            "bounty_id": "5f1fd434-3148-4b44-965e-0012fc06c7f3",
+            "area_key": "1D6378B28005243F53D56A3D9CF3AA24",
+            "has_helmet": false
+        },
+        {
+            "id": "426a28de-a76c-49ae-959c-3e0f26d431b7",
+            "location": {
+                "latitude": 38.891666416666666,
+                "longitude": -77.08530426666667
+            },
+            "code": "CYI••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 84,
+            "estimated_range": 28564,
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "b8ae4c47-ffaf-430b-a633-5d5fbcb43fa6",
+            "location": {
+                "latitude": 38.88967895,
+                "longitude": -77.08444213333334
+            },
+            "code": "ZUI••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 40,
+            "estimated_range": 13510,
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "4273bfb2-2a88-4c07-8ea8-e278022ac780",
+            "location": {
+                "latitude": 38.89733505,
+                "longitude": -77.08796691666666
+            },
+            "code": "AP8••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "1b722308-264a-482c-852f-82a43cf3075a",
+            "battery_level": 19,
+            "estimated_range": 6562,
+            "area_key": "68018BA691B0E9B0942B0CEDEE3C643C",
+            "has_helmet": false
+        },
+        {
+            "id": "4f5eb965-6189-4c59-929b-a515499908a3",
+            "location": {
+                "latitude": 38.89634783333334,
+                "longitude": -77.08809783333332
+            },
+            "code": "ZKT••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 85,
+            "estimated_range": 28950,
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "ecd85b53-bf77-4e77-860f-d6514f7543d0",
+            "location": {
+                "latitude": 38.89112473333333,
+                "longitude": -77.08579253333333
+            },
+            "code": "6T4••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "775bfd21-a696-4a26-b5d1-d4aac5c4653b",
+            "battery_level": 63,
+            "estimated_range": 21230,
+            "area_key": "D0E9D430F7142DD8E3566408495DC104",
+            "has_helmet": false
+        },
+        {
+            "id": "169a8f57-0431-4229-8174-b1069bd0fecf",
+            "location": {
+                "latitude": 38.88927078333334,
+                "longitude": -77.08507538333333
+            },
+            "code": "81J••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 80,
+            "estimated_range": 27020,
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "426eb72e-912b-494d-8671-a8907d3c5bed",
+            "location": {
+                "latitude": 38.89115916666666,
+                "longitude": -77.08626583333333
+            },
+            "code": "3E6••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 88,
+            "estimated_range": 29722,
+            "bounty_id": "176bd5f0-c89d-48d8-997c-a0f906e115de",
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "6fa79c7c-6102-4c86-9408-5529d09f786c",
+            "location": {
+                "latitude": 38.89810595287717,
+                "longitude": -77.08934878882093
+            },
+            "code": "2HR••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "775bfd21-a696-4a26-b5d1-d4aac5c4653b",
+            "battery_level": 64,
+            "estimated_range": 21616,
+            "bounty_id": "b9f23c0e-c0d3-410e-9489-40da5e9a8eb1",
+            "area_key": "D0E9D430F7142DD8E3566408495DC104",
+            "has_helmet": false
+        },
+        {
+            "id": "613f5ce1-80ef-462b-a442-197009c9b52d",
+            "location": {
+                "latitude": 38.896915,
+                "longitude": -77.089153
+            },
+            "code": "UUG••",
+            "model": "eb100",
+            "vehicle_class": "bike",
+            "captive": false,
+            "partner_id": "e5f8bab6-a103-45de-8ecf-d1fdfd08b7c8",
+            "battery_level": 66,
+            "estimated_range": 30073,
+            "area_key": "1D6378B28005243F53D56A3D9CF3AA24",
+            "has_helmet": false
+        },
+        {
+            "id": "62e0f7a7-f945-4f27-bcee-828dec78ec3e",
+            "location": {
+                "latitude": 38.891189583333336,
+                "longitude": -77.086792
+            },
+            "code": "J7S••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 77,
+            "estimated_range": 26248,
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "89b968aa-a68d-4e97-81ab-c3d84832a3e7",
+            "location": {
+                "latitude": 38.89109801666667,
+                "longitude": -77.08674621666667
+            },
+            "code": "49V••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 80,
+            "estimated_range": 27020,
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "054805fa-92cc-4ce7-9978-251dc36de985",
+            "location": {
+                "latitude": 38.895833,
+                "longitude": -77.088858
+            },
+            "code": "D2R••",
+            "model": "eb100",
+            "vehicle_class": "bike",
+            "captive": false,
+            "partner_id": "e5f8bab6-a103-45de-8ecf-d1fdfd08b7c8",
+            "battery_level": 67,
+            "estimated_range": 30566,
+            "area_key": "1D6378B28005243F53D56A3D9CF3AA24",
+            "has_helmet": false
+        },
+        {
+            "id": "7f839a28-444b-462e-aa07-5ebfd13a2ceb",
+            "location": {
+                "latitude": 38.89584731666666,
+                "longitude": -77.08889008333334
+            },
+            "code": "GEI••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "1b722308-264a-482c-852f-82a43cf3075a",
+            "battery_level": 25,
+            "estimated_range": 8492,
+            "area_key": "68018BA691B0E9B0942B0CEDEE3C643C",
+            "has_helmet": false
+        },
+        {
+            "id": "4ded2042-0f97-4011-9596-099473e2f612",
+            "location": {
+                "latitude": 38.89593125,
+                "longitude": -77.08893585000001
+            },
+            "code": "NSJ••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "1b722308-264a-482c-852f-82a43cf3075a",
+            "battery_level": 68,
+            "estimated_range": 23160,
+            "area_key": "68018BA691B0E9B0942B0CEDEE3C643C",
+            "has_helmet": false
+        },
+        {
+            "id": "fd61943b-07aa-4b06-b6fe-cf944a6ddf97",
+            "location": {
+                "latitude": 38.895809,
+                "longitude": -77.08891
+            },
+            "code": "MID••",
+            "model": "eb100",
+            "vehicle_class": "bike",
+            "captive": false,
+            "partner_id": "e5f8bab6-a103-45de-8ecf-d1fdfd08b7c8",
+            "battery_level": 60,
+            "estimated_range": 27608,
+            "bounty_id": "5f8ae3f9-1bea-4e8b-af8e-15c1ed8cfba2",
+            "area_key": "1D6378B28005243F53D56A3D9CF3AA24",
+            "has_helmet": false
+        },
+        {
+            "id": "675f6503-ebcb-4284-9274-0223d93b6914",
+            "location": {
+                "latitude": 38.89588546666666,
+                "longitude": -77.08895111666668
+            },
+            "code": "XXP••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "1b722308-264a-482c-852f-82a43cf3075a",
+            "battery_level": 77,
+            "estimated_range": 26248,
+            "area_key": "68018BA691B0E9B0942B0CEDEE3C643C",
+            "has_helmet": false
+        },
+        {
+            "id": "68b4ae0d-7b55-4854-a143-3d48d1fe3885",
+            "location": {
+                "latitude": 38.89587021666667,
+                "longitude": -77.08895111666668
+            },
+            "code": "V27••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "1b722308-264a-482c-852f-82a43cf3075a",
+            "battery_level": 34,
+            "estimated_range": 11580,
+            "area_key": "68018BA691B0E9B0942B0CEDEE3C643C",
+            "has_helmet": false
+        },
+        {
+            "id": "8b6859db-4aeb-4553-b8b8-7a4b1a869ac4",
+            "location": {
+                "latitude": 38.89584731666666,
+                "longitude": -77.08894348333334
+            },
+            "code": "NHU••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "1b722308-264a-482c-852f-82a43cf3075a",
+            "battery_level": 97,
+            "estimated_range": 32810,
+            "area_key": "68018BA691B0E9B0942B0CEDEE3C643C",
+            "has_helmet": false
+        },
+        {
+            "id": "110b71bd-3473-41b8-a997-ca0737bfc654",
+            "location": {
+                "latitude": 38.895845,
+                "longitude": -77.088971
+            },
+            "code": "BSN••",
+            "model": "eb100",
+            "vehicle_class": "bike",
+            "captive": false,
+            "partner_id": "e5f8bab6-a103-45de-8ecf-d1fdfd08b7c8",
+            "battery_level": 65,
+            "estimated_range": 29580,
+            "bounty_id": "d37a7fa9-c8df-4a00-853e-276679d95cab",
+            "area_key": "1D6378B28005243F53D56A3D9CF3AA24",
+            "has_helmet": false
+        },
+        {
+            "id": "c8751e12-0016-4ab4-932d-8807a26b8f12",
+            "location": {
+                "latitude": 38.896766666666664,
+                "longitude": -77.08951568333333
+            },
+            "code": "BQA••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 30,
+            "estimated_range": 10036,
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "7cd6f701-6097-4cd5-93a6-275a52ba2ca5",
+            "location": {
+                "latitude": 38.895214083333336,
+                "longitude": -77.08904266666667
+            },
+            "code": "URD••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 43,
+            "estimated_range": 14668,
+            "bounty_id": "d3bb41f5-3d44-4062-b01f-9faf4454c21e",
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "62263df9-31fc-493e-bd31-a7d715dcdc09",
+            "location": {
+                "latitude": 38.89074706666667,
+                "longitude": -77.08709716666667
+            },
+            "code": "7PZ••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "1b722308-264a-482c-852f-82a43cf3075a",
+            "battery_level": 94,
+            "estimated_range": 32038,
+            "area_key": "68018BA691B0E9B0942B0CEDEE3C643C",
+            "has_helmet": false
+        },
+        {
+            "id": "960a6272-ff29-418c-88bf-6b1b204a24f4",
+            "location": {
+                "latitude": 38.8910141,
+                "longitude": -77.08737183333332
+            },
+            "code": "VN8••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 91,
+            "estimated_range": 30880,
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "b7bc2de1-3c8c-47a4-bfdf-617274ba9b2d",
+            "location": {
+                "latitude": 38.88641766666667,
+                "longitude": -77.08474483333333
+            },
+            "code": "5IS••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "775bfd21-a696-4a26-b5d1-d4aac5c4653b",
+            "battery_level": 59,
+            "estimated_range": 20072,
+            "area_key": "D0E9D430F7142DD8E3566408495DC104",
+            "has_helmet": false
+        },
+        {
+            "id": "e3fc57a2-a849-459c-b671-f5c1c8e70da2",
+            "location": {
+                "latitude": 38.88978958333333,
+                "longitude": -77.08808136666667
+            },
+            "code": "NSK••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 74,
+            "estimated_range": 25090,
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "6b44d2f3-4f22-4421-a7aa-b6bdec03c987",
+            "location": {
+                "latitude": 38.8956604,
+                "longitude": -77.09126281666666
+            },
+            "code": "DPL••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "1b722308-264a-482c-852f-82a43cf3075a",
+            "battery_level": 17,
+            "estimated_range": 5790,
+            "area_key": "68018BA691B0E9B0942B0CEDEE3C643C",
+            "has_helmet": false
+        },
+        {
+            "id": "579b9869-7fa8-4943-9c15-0caacd725c79",
+            "location": {
+                "latitude": 38.8968811,
+                "longitude": -77.09178924999999
+            },
+            "code": "R29••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 44,
+            "estimated_range": 15054,
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "1b80baa1-9bd1-4c68-9b0e-e9a0b6bf1bf2",
+            "location": {
+                "latitude": 38.89016797854458,
+                "longitude": -77.08927706135032
+            },
+            "code": "6RP••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 68,
+            "estimated_range": 23160,
+            "bounty_id": "75a22399-345f-4cf4-b859-a29f50d57f83",
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "49359603-57f6-4b41-becf-6d2d9832388d",
+            "location": {
+                "latitude": 38.894947050000006,
+                "longitude": -77.09183501666666
+            },
+            "code": "FV7••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "775bfd21-a696-4a26-b5d1-d4aac5c4653b",
+            "battery_level": 51,
+            "estimated_range": 17370,
+            "area_key": "D0E9D430F7142DD8E3566408495DC104",
+            "has_helmet": false
+        },
+        {
+            "id": "8ce17642-4cea-4ab7-b7f7-b6926f61a2ee",
+            "location": {
+                "latitude": 38.89492035,
+                "longitude": -77.09183501666666
+            },
+            "code": "R8V••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 47,
+            "estimated_range": 15826,
+            "bounty_id": "47ef88fb-c2f8-43ce-92c3-1739ca780a53",
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "9a29378e-a105-47e0-977c-dda6dcde2b54",
+            "location": {
+                "latitude": 38.896644599999995,
+                "longitude": -77.09249878333334
+            },
+            "code": "WR8••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 73,
+            "estimated_range": 24704,
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "8facda45-e608-44bb-b44b-9c0820a41885",
+            "location": {
+                "latitude": 38.882625583333336,
+                "longitude": -77.08474731666666
+            },
+            "code": "ZU3••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 78,
+            "estimated_range": 26634,
+            "bounty_id": "0f51679e-8061-416f-82a4-622bbe6aacf0",
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "110b98d9-dec7-4643-8fe4-f97796424f5f",
+            "location": {
+                "latitude": 38.88960266666666,
+                "longitude": -77.08963013333333
+            },
+            "code": "B4W••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 30,
+            "estimated_range": 10036,
+            "bounty_id": "4a9e2b09-8986-4f4e-9379-dc048385b074",
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "121a2865-3470-45e8-a751-ae8c98a89c7a",
+            "location": {
+                "latitude": 38.890963,
+                "longitude": -77.090521
+            },
+            "code": "QWK••",
+            "model": "eb100",
+            "vehicle_class": "bike",
+            "captive": false,
+            "partner_id": "e5f8bab6-a103-45de-8ecf-d1fdfd08b7c8",
+            "battery_level": 81,
+            "estimated_range": 36975,
+            "bounty_id": "3e098ee3-f28f-4229-81c0-afcd34616253",
+            "area_key": "1D6378B28005243F53D56A3D9CF3AA24",
+            "has_helmet": false
+        },
+        {
+            "id": "8177d322-7181-462e-8cf3-35e781657934",
+            "location": {
+                "latitude": 38.8960228,
+                "longitude": -77.09321595
+            },
+            "code": "4W1••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 19,
+            "estimated_range": 6562,
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "ce8c850b-1ecf-48f4-b896-3b8fab59958e",
+            "location": {
+                "latitude": 38.881984716666665,
+                "longitude": -77.08518981666666
+            },
+            "code": "VLI••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "2a684316-d4a7-43e5-878b-95b079904483",
+            "battery_level": 55,
+            "estimated_range": 18528,
+            "area_key": "7F72E15524E084B559F40CA8DF5EB279",
+            "has_helmet": false
+        },
+        {
+            "id": "86a84bd2-182b-4813-9d21-07ef455162dc",
+            "location": {
+                "latitude": 38.89595413333333,
+                "longitude": -77.09330750000001
+            },
+            "code": "122••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "1b722308-264a-482c-852f-82a43cf3075a",
+            "battery_level": 30,
+            "estimated_range": 10036,
+            "area_key": "68018BA691B0E9B0942B0CEDEE3C643C",
+            "has_helmet": false
+        },
+        {
+            "id": "cc3f4eff-9720-43ca-9185-ce0a360dfe3c",
+            "location": {
+                "latitude": 38.88885116666667,
+                "longitude": -77.09053801666667
+            },
+            "code": "6Q1••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "1b722308-264a-482c-852f-82a43cf3075a",
+            "battery_level": 70,
+            "estimated_range": 23932,
+            "area_key": "68018BA691B0E9B0942B0CEDEE3C643C",
+            "has_helmet": false
+        },
+        {
+            "id": "04113a2d-a0ef-45a5-9401-17c0249ca2c9",
+            "location": {
+                "latitude": 38.88948821666667,
+                "longitude": -77.0908966
+            },
+            "code": "5AD••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "2a684316-d4a7-43e5-878b-95b079904483",
+            "battery_level": 44,
+            "estimated_range": 15054,
+            "area_key": "7F72E15524E084B559F40CA8DF5EB279",
+            "has_helmet": false
+        },
+        {
+            "id": "1bd5f227-9168-4863-b4d2-0997be8ea148",
+            "location": {
+                "latitude": 38.88946915,
+                "longitude": -77.09090423333333
+            },
+            "code": "DJ7••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "2a684316-d4a7-43e5-878b-95b079904483",
+            "battery_level": 28,
+            "estimated_range": 9650,
+            "bounty_id": "174d5f05-7b7d-4baf-93ae-b95cabcb3822",
+            "area_key": "7F72E15524E084B559F40CA8DF5EB279",
+            "has_helmet": false
+        },
+        {
+            "id": "61ec0bee-05c5-4666-b324-b26b91111328",
+            "location": {
+                "latitude": 38.888786833333334,
+                "longitude": -77.09075566666667
+            },
+            "code": "SUB••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "775bfd21-a696-4a26-b5d1-d4aac5c4653b",
+            "battery_level": 36,
+            "estimated_range": 12352,
+            "area_key": "D0E9D430F7142DD8E3566408495DC104",
+            "has_helmet": false
+        },
+        {
+            "id": "720f3303-c6da-427d-978c-3e271a412b1b",
+            "location": {
+                "latitude": 38.889358,
+                "longitude": -77.091281
+            },
+            "code": "EMJ••",
+            "model": "eb100",
+            "vehicle_class": "bike",
+            "captive": false,
+            "partner_id": "e5f8bab6-a103-45de-8ecf-d1fdfd08b7c8",
+            "battery_level": 16,
+            "estimated_range": 7395,
+            "bounty_id": "02bdeabb-4c5a-4bdd-9d04-b654a4199a4e",
+            "area_key": "1D6378B28005243F53D56A3D9CF3AA24",
+            "has_helmet": false
+        },
+        {
+            "id": "6129ca88-2130-4e5f-ab54-e779106d70c3",
+            "location": {
+                "latitude": 38.8881073,
+                "longitude": -77.09059906666667
+            },
+            "code": "3Q9••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "775bfd21-a696-4a26-b5d1-d4aac5c4653b",
+            "battery_level": 49,
+            "estimated_range": 16598,
+            "area_key": "D0E9D430F7142DD8E3566408495DC104",
+            "has_helmet": false
+        },
+        {
+            "id": "93506939-6ea3-4960-8519-60023a5fac2f",
+            "location": {
+                "latitude": 38.89197921666666,
+                "longitude": -77.09294891666667
+            },
+            "code": "LSR••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 43,
+            "estimated_range": 14668,
+            "bounty_id": "d93b694a-43da-4b74-be82-76404e59e14c",
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "7613bccb-08a8-426f-85e2-1bf3af0448cc",
+            "location": {
+                "latitude": 38.88936233333333,
+                "longitude": -77.09179688333333
+            },
+            "code": "XX2••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "1b722308-264a-482c-852f-82a43cf3075a",
+            "battery_level": 65,
+            "estimated_range": 22002,
+            "bounty_id": "dac7032b-a0d6-4776-aafe-6f3ca8f552f6",
+            "area_key": "68018BA691B0E9B0942B0CEDEE3C643C",
+            "has_helmet": false
+        },
+        {
+            "id": "ff8fef74-e5cb-4dc2-8f43-aff64a3df945",
+            "location": {
+                "latitude": 38.8858757,
+                "longitude": -77.08983611666666
+            },
+            "code": "LHR••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 48,
+            "estimated_range": 16212,
+            "bounty_id": "033ac3df-b469-4bea-8779-4f750f2d1cbd",
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "1ddd00a9-36eb-4505-baf9-5edd62df5dae",
+            "location": {
+                "latitude": 38.88847747986743,
+                "longitude": -77.09167925579756
+            },
+            "code": "7AT••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 91,
+            "estimated_range": 30880,
+            "bounty_id": "990b5baf-ac70-49b1-957b-7afa214d184a",
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "82757f0e-2384-49eb-9d18-bcfce93b5b2f",
+            "location": {
+                "latitude": 38.88756943333333,
+                "longitude": -77.09133911666666
+            },
+            "code": "1HL••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 48,
+            "estimated_range": 16212,
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "b3832194-4dfb-4601-9588-77e694b56b5e",
+            "location": {
+                "latitude": 38.88842066666667,
+                "longitude": -77.09202400000001
+            },
+            "code": "DXD••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 80,
+            "estimated_range": 27020,
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "1b909ec1-37d0-4340-9b24-d27142394bc3",
+            "location": {
+                "latitude": 38.888359066666666,
+                "longitude": -77.09200286666666
+            },
+            "code": "W1H••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 77,
+            "estimated_range": 26248,
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "07c06d11-5f92-4945-b59b-2abdd33b6bf0",
+            "location": {
+                "latitude": 38.888259833333336,
+                "longitude": -77.09199833333334
+            },
+            "code": "SYW••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 83,
+            "estimated_range": 28178,
+            "bounty_id": "d91edb52-275c-41ad-a20a-698f0baea42c",
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "c1ecdc92-b78c-4ad9-9d1d-9c380539a3ec",
+            "location": {
+                "latitude": 38.886310583333334,
+                "longitude": -77.09085846666667
+            },
+            "code": "UZX••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "457fc2b0-166b-4c65-b36c-96f02b7e0929",
+            "battery_level": 34,
+            "estimated_range": 11580,
+            "bounty_id": "a2ef4fe3-a590-46eb-bf27-fde6434d59ab",
+            "area_key": "66AD2F393F7A82D06A4A7958BF462C3A",
+            "has_helmet": false
+        },
+        {
+            "id": "6413ebcb-96ff-4802-a7b3-1c4a715cc19a",
+            "location": {
+                "latitude": 38.894878383333335,
+                "longitude": -77.09528350000001
+            },
+            "code": "HVE••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "9122cc04-c219-410d-a4e9-6ab9704aebf4",
+            "battery_level": 69,
+            "estimated_range": 23546,
+            "area_key": "43202DADAEEB9F4D90EE1768FF33D066",
+            "has_helmet": false
+        },
+        {
+            "id": "522491b7-fe0b-4866-b5ee-6f205da0283a",
+            "location": {
+                "latitude": 38.87879733333333,
+                "longitude": -77.08518416666668
+            },
+            "code": "QV7••",
+            "model": "b3",
+            "vehicle_class": "scooter",
+            "captive": false,
+            "partner_id": "775bfd21-a696-4a26-b5d1-d4aac5c4653b",
+            "battery_level": 45,
+            "estimated_range": 15440,
+            "area_key": "D0E9D430F7142DD8E3566408495DC104",
+            "has_helmet": false
+        }
+    ],
+    "cell_ids": [
+        "-8523145857682374656",
+        "-8523137061589352448",
+        "-8523119469403308032",
+        "-8523128265496330240"
+    ]
+}
