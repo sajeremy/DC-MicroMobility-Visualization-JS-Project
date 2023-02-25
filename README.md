@@ -1,6 +1,6 @@
 # DC Shared Micromobility Visualization
 
-[Live link for DC Micromobility Visualization](https://dc-micromobility-visualization.onrender.com/)
+[Live link for DC Micromobility Visualization](https://micromobilitydc.onrender.com)
 
 ### Motivation
 
